@@ -1,0 +1,17 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="markNavyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#1565C0" />
+      <stop offset="100%" stopColor="#0B2D4D" />
+    </linearGradient>
+    <linearGradient id="markOrangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#FF9E40" />
+      <stop offset="100%" stopColor="#FF7A00" />
+    </linearGradient>
+  </defs>
+
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="#0B2D4D" stroke="#1565C0" stroke-width="2" />
+  <path d="M 44 19 C 35 12, 20 14, 15 25 C 10 36, 12 48, 22 53 C 31 57, 40 54, 47 48" stroke="url(#markNavyGrad)" stroke-width="7" stroke-linecap="round" fill="none" />
+  <path d="M 24 32 L 48 32 M 39 23 L 49 32 L 39 41" stroke="url(#markOrangeGrad)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="53" cy="32" r="2.5" fill="#FF7A00" />
+</svg>

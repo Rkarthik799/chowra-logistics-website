@@ -1,0 +1,29 @@
+<svg width="240" height="60" viewBox="0 0 240 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="chowraNavyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#1565C0" />
+      <stop offset="100%" stopColor="#0B2D4D" />
+    </linearGradient>
+    <linearGradient id="chowraOrangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#FF9E40" />
+      <stop offset="100%" stopColor="#FF7A00" />
+    </linearGradient>
+  </defs>
+
+  <!-- Container Shield -->
+  <rect x="5" y="5" width="50" height="50" rx="12" fill="#0B2D4D" stroke="#1565C0" stroke-width="2" />
+  
+  <!-- Outer C Arc -->
+  <path d="M 40 18 C 32 12, 18 14, 14 24 C 9 34, 11 44, 20 48 C 28 52, 36 49, 42 44" stroke="url(#chowraNavyGrad)" stroke-width="6" stroke-linecap="round" fill="none" />
+  
+  <!-- Forward Arrow -->
+  <path d="M 22 30 L 44 30 M 35 22 L 45 30 L 35 38" stroke="url(#chowraOrangeGrad)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- Dot -->
+  <circle cx="49" cy="30" r="2" fill="#FF7A00" />
+
+  <!-- Typography -->
+  <text x="68" y="32" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="22" fill="#0B2D4D" letter-spacing="1">CHOWRA</text>
+  <circle cx="178" cy="24" r="3" fill="#FF7A00" />
+  <text x="69" y="47" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="9" fill="#1565C0" letter-spacing="2.5">LOGISTICS &amp; COURIERS</text>
+</svg>
