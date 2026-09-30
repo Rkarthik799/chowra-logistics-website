@@ -45,8 +45,8 @@ export function ServicesSection({ onOpenQuoteModal }: ServicesSectionProps) {
       <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 relative z-10">
         <SectionHeading
           badge="End-to-End Capabilities"
-          title="Our Logistics Solutions"
-          subtitle="End-to-end delivery and logistics solutions designed for individuals, businesses and growing enterprises."
+          title="Sample Logistics Services"
+          subtitle="Conceptual service profiles created to demonstrate the website experience; these are not confirmed company offerings."
         />
 
         {/* 7 Services Grid */}
@@ -119,7 +119,7 @@ export function ServicesSection({ onOpenQuoteModal }: ServicesSectionProps) {
               <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-slate-100 pt-6">
                 <div className="flex items-center gap-2 text-xs text-slate-500">
                   <ShieldCheck className="w-4 h-4 text-emerald-600" />
-                  <span>Transit Insurance &amp; Live Tracking Included</span>
+                  <span>Insurance Options &amp; Tracking Demo</span>
                 </div>
 
                 <div className="flex items-center gap-3 w-full sm:w-auto">

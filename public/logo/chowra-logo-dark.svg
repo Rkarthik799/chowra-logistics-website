@@ -76,7 +76,6 @@
     <polygon points="16.8,22 8.5,37.5 25.1,37.5" fill="#FF7A00" />
   </g>
 
-  <text x="408" y="36" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="13" fill="#94A3B8">TM</text>
 
   <!-- 3. Subtitle: LOGISTICS AND COURIERS LIMITED (White) -->
   <text x="145" y="92" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="14" fill="#FFFFFF" letter-spacing="3.2">LOGISTICS AND COURIERS LIMITED</text>

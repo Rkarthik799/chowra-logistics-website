@@ -39,16 +39,16 @@ export function CTASection({ onOpenQuoteModal }: CTASectionProps) {
         <div className="max-w-4xl 2xl:max-w-5xl mx-auto text-center space-y-6">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 text-orange-300 text-xs font-semibold border border-white/15">
             <Zap className="w-3.5 h-3.5 text-[#FF7A00]" />
-            <span>Accelerate Your Dispatch Operations</span>
+            <span>Technical Assignment Demo</span>
           </div>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-tight">
-            Ready to Move Your Next Shipment?
+            Explore the Sample Shipment Flow
           </h2>
 
           <p className="text-base sm:text-lg lg:text-xl text-slate-300 leading-relaxed max-w-3xl mx-auto">
-            Get reliable logistics support for your personal and business delivery needs.
-            Seamless booking, real-time GPS milestone tracking, and transparent pricing.
+            Explore this conceptual logistics service experience for the technical assignment.
+            Try the tracking demo and sample pricing calculator.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
@@ -77,15 +77,15 @@ export function CTASection({ onOpenQuoteModal }: CTASectionProps) {
           <div className="pt-8 border-t border-white/10 flex flex-wrap items-center justify-center gap-6 text-xs text-slate-300">
             <div className="flex items-center gap-2">
               <ShieldCheck className="w-4 h-4 text-emerald-400" />
-              <span>Full Transit Liability Insurance</span>
+              <span>Insurance Options</span>
             </div>
             <div className="flex items-center gap-2">
               <Zap className="w-4 h-4 text-orange-400" />
-              <span>Instant Digital Air Waybill (AWB)</span>
+              <span>Sample AWB Flow</span>
             </div>
             <div className="flex items-center gap-2">
               <PhoneCall className="w-4 h-4 text-blue-400" />
-              <span>24/7 Dedicated Shipment Helpline</span>
+              <span>Demo Contact Details</span>
             </div>
           </div>
         </div>

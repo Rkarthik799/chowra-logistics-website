@@ -92,9 +92,9 @@ export function RateCalculator({ onBookWithEstimate }: RateCalculatorProps) {
     <section id="calculator" className="py-20 bg-[#F5F8FC] scroll-mt-20">
       <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <SectionHeading
-          badge="Instant Transparent Quotation"
+          badge="Sample Pricing Calculator"
           title="Rate Calculator &amp; Transit Estimator"
-          subtitle="Estimate your consignment tariff and anticipated transit timeline in seconds using our multi-modal logistics calculation formula."
+          subtitle="Explore illustrative shipment pricing and transit estimates with this demonstration calculator."
         />
 
         <div className="max-w-5xl 2xl:max-w-6xl mx-auto bg-white rounded-3xl shadow-xl shadow-slate-200/80 border border-slate-200/90 overflow-hidden">
@@ -105,7 +105,7 @@ export function RateCalculator({ onBookWithEstimate }: RateCalculatorProps) {
                 <ChowraEmblem theme="dark" size={36} />
               </div>
               <div>
-                <h3 className="text-xl font-bold">Consignment Tariff Estimator</h3>
+                <h3 className="text-xl font-bold">Sample Pricing Calculator</h3>
                 <p className="text-xs text-slate-300 mt-0.5">
                   Calculate domestic &amp; cross-border freight quotes
                 </p>
@@ -113,7 +113,7 @@ export function RateCalculator({ onBookWithEstimate }: RateCalculatorProps) {
             </div>
 
             <span className="text-xs px-3 py-1 rounded-full bg-white/10 text-orange-300 border border-white/15 font-semibold">
-              Live Tariff Simulator
+              Illustrative Pricing Demo
             </span>
           </div>
 
@@ -334,8 +334,7 @@ export function RateCalculator({ onBookWithEstimate }: RateCalculatorProps) {
               <div className="mt-5 flex items-start gap-2 text-[11px] text-slate-500 bg-white/60 p-3 rounded-lg border border-slate-200">
                 <Info className="w-4 h-4 text-[#1565C0] flex-shrink-0 mt-0.5" />
                 <span>
-                  <strong>Sample Pricing Formula:</strong> This calculation uses a frontend demonstration algorithm
-                  (Base rate + Weight charge + Service multiplier + Handling + GST). It does not represent an official Chowra contract tariff.
+                  <strong>Sample Pricing Calculator:</strong> Pricing shown is illustrative and does not represent official Chowra tariffs.
                 </span>
               </div>
             </div>

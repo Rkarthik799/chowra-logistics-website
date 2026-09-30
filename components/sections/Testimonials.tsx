@@ -10,9 +10,9 @@ export function Testimonials() {
     <section className="py-20 bg-white scroll-mt-20">
       <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <SectionHeading
-          badge="Customer Experiences"
-          title="What Our Business Clients Say"
-          subtitle="Feedback from enterprise logistics leaders and e-commerce founders on their dispatch experience with Chowra Logistics."
+          badge="Sample Testimonials"
+          title="Conceptual Customer Feedback"
+          subtitle="Fictional sample feedback included for this technical assignment; these testimonials do not represent real customers."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 xl:gap-10">
@@ -65,7 +65,7 @@ export function Testimonials() {
         <div className="mt-8 text-center text-xs text-slate-600 flex items-center justify-center gap-1.5">
           <Info className="w-3.5 h-3.5 text-[#1565C0]" />
           <span>
-            <strong>Note:</strong> Testimonials feature fictional representative business clients as required by the assignment guidelines.
+            <strong>Demo content:</strong> Names, roles, companies, locations, ratings, and testimonials are fictional and created for demonstration purposes.
           </span>
         </div>
       </div>

@@ -38,7 +38,7 @@ export function WhyChooseUs() {
     <section id="about" className="py-20 bg-white scroll-mt-20 relative">
       <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <SectionHeading
-          badge="Core Operational Advantages"
+          badge="Operational Features"
           title="Why Choose Chowra Logistics?"
           subtitle="Engineered from the ground up for dependable shipment transit, state-of-the-art telemetry, and scalable enterprise supply chain adaptability."
         />
@@ -72,7 +72,7 @@ export function WhyChooseUs() {
               {/* Bottom Subtle Indicator */}
               <div className="mt-6 pt-4 border-t border-slate-100 flex items-center gap-2 text-xs font-semibold text-[#1565C0]">
                 <CheckCircle className="w-4 h-4 text-emerald-600" />
-                <span>Verified Operational Standard</span>
+                <span>Operational Features</span>
               </div>
             </div>
           ))}

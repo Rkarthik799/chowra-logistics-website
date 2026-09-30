@@ -32,7 +32,7 @@ export function Navbar({ onOpenQuoteModal }: NavbarProps) {
       }
 
       // Track active section for nav highlighting
-      const sections = ["home", "tracking", "services", "network", "calculator", "why-us", "contact"];
+      const sections = ["home", "tracking", "services", "network", "calculator", "about", "contact"];
       for (const sectionId of sections) {
         const el = document.getElementById(sectionId);
         if (el) {
@@ -74,7 +74,7 @@ export function Navbar({ onOpenQuoteModal }: NavbarProps) {
           <div className="flex items-center gap-2">
             <span className="flex h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
             <span className="text-slate-300 font-medium">
-              Pan-India Express Logistics Network Operational
+              Conceptual Logistics Network
             </span>
             <span className="hidden md:inline-block text-slate-500">|</span>
 
@@ -82,14 +82,14 @@ export function Navbar({ onOpenQuoteModal }: NavbarProps) {
           <div className="flex items-center gap-5 text-slate-300">
             <span className="hidden sm:inline-flex items-center gap-1.5 hover:text-white">
               <ShieldCheck className="w-3.5 h-3.5 text-blue-400" />
-              <span>ISO 9001 Certified Quality Standards</span>
+              <span>Sample Operational Features</span>
             </span>
             <a
-              href="tel:18002008899"
+              href="#contact"
               className="inline-flex items-center gap-1.5 text-slate-200 hover:text-orange-400 font-medium transition-colors"
             >
               <PhoneCall className="w-3.5 h-3.5 text-orange-400" />
-              <span>1800-200-CHOWRA </span>
+              <span>Demo Contact Details</span>
             </a>
           </div>
         </div>
@@ -207,7 +207,7 @@ export function Navbar({ onOpenQuoteModal }: NavbarProps) {
 
                 <div className="flex items-center justify-center gap-2 text-xs text-slate-400 pt-2">
                   <PhoneCall className="w-3.5 h-3.5 text-orange-400" />
-                  <span>24/7 Helpline: 1800-200-CHOWRA </span>
+                  <span>Sample Contact: +91 00000 00000</span>
                 </div>
               </div>
             </div>

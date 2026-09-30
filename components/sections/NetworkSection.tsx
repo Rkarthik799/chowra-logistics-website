@@ -35,9 +35,9 @@ export function NetworkSection() {
     <section id="network" className="py-20 bg-white scroll-mt-20">
       <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <SectionHeading
-          badge="Pan-India Logistics Infrastructure"
-          title="Connecting Businesses and People Across Destinations"
-          subtitle="Our strategically located regional sorting hubs, express airport cargo gateways, and last-mile dispatch centers form an integrated multi-modal supply network."
+          badge="Sample Network Model"
+          title="Conceptual Logistics Network"
+          subtitle="Explore illustrative regional hubs, airport gateways, and delivery centers in this network demonstration. Locations and network figures are sample content, not verified operating details."
         />
 
         {/* 4 Pillars Summary */}
@@ -130,7 +130,7 @@ export function NetworkSection() {
                 {/* Hub Map Nodes */}
                 {filteredHubs.map((hub) => {
                   const isSelected = selectedHub.id === hub.id;
-                  const isHQ = hub.role.includes("Headquarters");
+                  const isHQ = hub.id === "hub-hyd";
 
                   return (
                     <button
@@ -224,7 +224,7 @@ export function NetworkSection() {
                   </h3>
                   <span className="text-xs text-slate-300">{selectedHub.state}</span>
                 </div>
-                <span className="px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+                <span className="px-2.5 py-1 rounded-full text-xs font-semibold bg-blue-500/20 text-blue-300 border border-blue-500/30">
                   {selectedHub.role}
                 </span>
               </div>
@@ -232,7 +232,7 @@ export function NetworkSection() {
               {/* Data attributes */}
               <div className="space-y-4 text-xs sm:text-sm">
                 <div>
-                  <span className="text-slate-400 text-xs block">Operational Facility</span>
+                  <span className="text-slate-400 text-xs block">Sample Facility</span>
                   <p className="text-slate-200 font-medium mt-0.5">
                     {selectedHub.addressPlaceholder}
                   </p>
@@ -246,7 +246,7 @@ export function NetworkSection() {
                 </div>
 
                 <div>
-                  <span className="text-slate-400 text-xs block">Daily Sorting Capacity</span>
+                  <span className="text-slate-400 text-xs block">Illustrative Daily Capacity</span>
                   <p className="text-orange-400 font-bold text-base mt-0.5">
                     {selectedHub.dailyShipmentCapacity}
                   </p>
@@ -254,11 +254,11 @@ export function NetworkSection() {
 
                 <div className="pt-2 border-t border-white/10 grid grid-cols-2 gap-3 text-xs">
                   <div className="bg-white/5 p-2.5 rounded-lg">
-                    <span className="text-slate-400">Sorting Type:</span>
-                    <strong className="block text-white mt-0.5">Automated High-Speed</strong>
+                    <span className="text-slate-400">Sample Sorting Model:</span>
+                    <strong className="block text-white mt-0.5">Automated Concept</strong>
                   </div>
                   <div className="bg-white/5 p-2.5 rounded-lg">
-                    <span className="text-slate-400">Airport Access:</span>
+                    <span className="text-slate-400">Sample Route Option:</span>
                     <strong className="block text-white mt-0.5">Air Cargo Gateway</strong>
                   </div>
                 </div>

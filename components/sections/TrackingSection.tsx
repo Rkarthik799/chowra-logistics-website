@@ -115,9 +115,9 @@ export function TrackingSection({
     <section id="tracking" className="py-20 bg-[#F5F8FC] scroll-mt-20">
       <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <SectionHeading
-          badge="Live Consignment Telemetry"
+          badge="Demo Tracking Data"
           title="Track Your Shipment"
-          subtitle="Enter your consignment or Air Waybill (AWB) number to view real-time location milestones, transit updates, and expected delivery time."
+          subtitle="Try sample AWBs to explore illustrative location milestones, transit updates, and estimated delivery details. These are demo records, not real shipments."
         />
 
         {/* Tracking Input Card */}
@@ -203,7 +203,7 @@ export function TrackingSection({
           {/* Shipment Result Details View */}
           {activeShipment && !isLoading && (
             <div className="mt-8 pt-8 border-t border-slate-200 animate-in fade-in duration-300">
-              {/* Header: Tracking ID + Status Badge + Official Emblem */}
+              {/* Header: Demo Tracking ID + Status Badge + Conceptual Emblem */}
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-slate-50 rounded-2xl p-5 sm:p-6 border border-slate-200/80">
                 <div className="flex items-center gap-4">
                   <div className="hidden sm:flex p-2 rounded-xl bg-white border border-slate-200 shadow-xs">
@@ -212,7 +212,7 @@ export function TrackingSection({
                   <div>
                     <div className="flex items-center gap-2">
                       <span className="text-xs uppercase font-bold text-slate-500 tracking-wider">
-                        Official Consignment AWB
+                        Demo Tracking Record
                       </span>
                       <span className="text-xs px-2.5 py-0.5 rounded-full bg-blue-100 text-[#083091] font-semibold">
                         {activeShipment.serviceType}
@@ -388,7 +388,7 @@ export function TrackingSection({
 
                   <div className="flex items-center gap-1.5 text-[#1565C0] font-semibold">
                     <Shield className="w-3.5 h-3.5" />
-                    <span>Digital POD &amp; Insurance Enabled</span>
+                    <span>Sample POD &amp; Insurance Options</span>
                   </div>
                 </div>
               </div>

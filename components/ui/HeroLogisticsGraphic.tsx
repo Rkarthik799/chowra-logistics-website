@@ -16,7 +16,7 @@ export function HeroLogisticsGraphic() {
           <div className="flex items-center gap-2">
             <span className="flex h-2.5 w-2.5 rounded-full bg-emerald-400 animate-pulse" />
             <span className="text-xs font-semibold uppercase tracking-wider text-slate-200">
-              Live Fleet Telemetry &bull; Active Route
+              Demo Tracking Data &bull; Sample Route
             </span>
           </div>
           <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-orange-500/20 text-orange-400 text-xs font-bold border border-orange-500/30">
@@ -154,7 +154,7 @@ export function HeroLogisticsGraphic() {
           <div className="absolute top-4 left-4 flex items-center gap-2 rounded-lg bg-[#071E34]/85 border border-white/10 px-3 py-1.5 backdrop-blur-md shadow-lg">
             <Navigation className="w-3.5 h-3.5 text-blue-400" />
             <div className="text-[11px] text-white">
-              <span className="text-slate-400">Current Speed: </span>
+              <span className="text-slate-400">Sample Speed: </span>
               <span className="font-bold text-orange-400">72 km/h</span>
             </div>
           </div>
@@ -162,14 +162,14 @@ export function HeroLogisticsGraphic() {
           {/* Floating Live Badge 2: On-Time Status */}
           <div className="absolute bottom-4 right-4 flex items-center gap-2 rounded-lg bg-emerald-950/80 border border-emerald-500/40 px-3 py-1.5 backdrop-blur-md shadow-lg">
             <CheckCircle className="w-3.5 h-3.5 text-emerald-400" />
-            <span className="text-[11px] font-bold text-emerald-300">Transit Status: On Schedule</span>
+            <span className="text-[11px] font-bold text-emerald-300">Sample Transit Status</span>
           </div>
         </div>
 
         {/* Bottom Details Grid */}
         <div className="mt-4 grid grid-cols-3 gap-3 text-center border-t border-white/10 pt-4">
           <div className="rounded-lg bg-white/5 p-2">
-            <div className="text-[11px] text-slate-400">Shipment ID</div>
+            <div className="text-[11px] text-slate-400">Demo AWB</div>
             <div className="text-xs font-bold text-white mt-0.5">CHW10001</div>
           </div>
           <div className="rounded-lg bg-white/5 p-2">

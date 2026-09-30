@@ -33,8 +33,7 @@ export function Footer() {
             <Logo theme="dark" variant="full" />
 
             <p className="text-sm text-slate-400 leading-relaxed pr-4">
-              CHOWRA LOGISTICS AND COURIERS LIMITED delivers multi-modal supply chain, express parcel,
-              and enterprise freight transport solutions engineered for speed, safety, and transparency.
+              A conceptual logistics brand and interactive demonstration created for technical evaluation.
             </p>
 
             {/* Technical Round Notice Box */}
@@ -45,16 +44,16 @@ export function Footer() {
               </div>
               <p className="text-[11px] leading-relaxed">
                 This website and conceptual branding were developed specifically as a technical-round assignment
-                for <strong>SAC Info Tech Solutions</strong> by <strong>Karthik Ramanadham</strong>. All addresses, phone numbers,
-                rates, and client names are illustrative sample content.
+                for <strong>SAC Info Tech Solutions</strong> by <strong>Karthik Ramanadham</strong>. All addresses,
+                phone numbers, rates, statistics, shipment records, testimonials, network figures, and customer references
+                are illustrative sample content created for demonstration purposes.
               </p>
             </div>
 
             <div className="flex items-center gap-3 pt-2">
-              <span className="text-xs text-slate-400">Network Operational:</span>
-              <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                All 18 Hubs Active
+              <span className="text-xs text-slate-400">Network Section:</span>
+              <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-blue-500/20 text-blue-300 border border-blue-500/30">
+                Sample Network Model
               </span>
             </div>
           </div>
@@ -173,20 +172,20 @@ export function Footer() {
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-orange-400 flex-shrink-0 mt-0.5" />
                 <span>
-                  Chowra Central Hub: Aero-Logistics Corridor, Shamshabad, Hyderabad 500108
+                  Sample Corporate Office — Hyderabad, India
                 </span>
               </div>
               <div className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-orange-400 flex-shrink-0" />
-                <span>1800-200-2469 / +91 40 2999 8800</span>
+                <span>+91 00000 00000</span>
               </div>
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-orange-400 flex-shrink-0" />
-                <span>support@chowralogistics.sample.in</span>
+                <a href="mailto:demo@example.com" className="hover:text-white">demo@example.com</a>
               </div>
               <div className="flex items-center gap-2.5">
                 <Clock className="w-4 h-4 text-orange-400 flex-shrink-0" />
-                <span>24/7 Operations &amp; Support</span>
+                <span>Sample Contact Hours</span>
               </div>
             </div>
 
@@ -195,14 +194,14 @@ export function Footer() {
                 href="#tracking"
                 className="inline-flex items-center justify-center w-full px-3 py-2 rounded-lg bg-[#1565C0] text-white text-xs font-semibold hover:bg-blue-600 transition-colors"
               >
-                Track Live Package
+                Open Tracking Demo
               </a>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Official Brand Identity Showcase (Featuring the 4 Logo Types & Color Palette) */}
+      {/* Conceptual Brand Assets Showcase */}
       <div className="border-t border-slate-800/80 bg-[#051728] py-8">
         <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
           <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
@@ -214,7 +213,7 @@ export function Footer() {
                 </h4>
               </div>
               <p className="text-xs text-slate-400 mt-1">
-                Approved corporate lockups across dark navy, light backgrounds, dispatch monochrome, and app icon.
+                Conceptual identity created for demonstration purposes, shown across dark, light, monochrome, and app icon treatments.
               </p>
             </div>
 
@@ -246,6 +245,8 @@ export function Footer() {
             </div>
           </div>
 
+          <p className="mt-4 text-[11px] text-slate-400">Contact details shown are placeholders for demonstration.</p>
+
           {/* Brand Colors Bar */}
           <div className="mt-5 pt-4 border-t border-slate-800/60 flex flex-wrap items-center gap-4 text-xs text-slate-400">
             <span className="font-semibold text-white">Brand Palette:</span>
@@ -274,7 +275,7 @@ export function Footer() {
         <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center sm:text-left">
             <span>
-              &copy; 2026 <strong>Chowra Logistics and Couriers Limited</strong>. All rights reserved.
+              &copy; 2026 <strong>Conceptual Chowra Logistics Website</strong>. Technical assignment demonstration.
             </span>
             <span className="hidden sm:inline text-slate-600">|</span>
             <span className="text-slate-400">

@@ -125,7 +125,7 @@ export function QuoteModal({ isOpen, onClose, prefillData }: QuoteModalProps) {
             <div>
               <h3 className="text-xl font-bold">Request a Logistics Quote</h3>
               <p className="text-xs text-slate-300 mt-0.5">
-                Official preliminary tariff assessment for business &amp; individual shipments
+                Sample quote request for demonstration only
               </p>
             </div>
           </div>
@@ -179,8 +179,8 @@ export function QuoteModal({ isOpen, onClose, prefillData }: QuoteModalProps) {
               </div>
 
               <p className="text-xs text-slate-500 max-w-md mx-auto">
-                A copy of this inquiry and formal tariff proposal will be delivered to{" "}
-                <strong>{email}</strong> within 30 minutes during standard operations.
+                This demo submission is displayed locally and is not sent to a company. The email entered is shown here for demonstration: {" "}
+                <strong>{email}</strong>.
               </p>
 
               <div className="pt-4 flex justify-center">

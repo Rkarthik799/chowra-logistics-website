@@ -43,7 +43,7 @@ export interface NetworkHub {
   city: string;
   state: string;
   region: "North" | "South" | "East" | "West" | "Central";
-  role: "National Headquarters & Mega Hub" | "Regional Sorting Hub" | "Express Gateway" | "Fulfillment Center";
+  role: string;
   addressPlaceholder: string;
   coveragePoints: string;
   dailyShipmentCapacity: string;

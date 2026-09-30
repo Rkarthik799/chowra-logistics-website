@@ -55,7 +55,7 @@ export function Hero({ onOpenQuoteModal, onQuickTrack }: HeroProps) {
             {/* Tagline Badge */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 text-xs sm:text-sm font-semibold text-slate-200 backdrop-blur-md">
               <span className="flex h-2 w-2 rounded-full bg-[#FF7A00] animate-ping" />
-              <span>Pan-India Courier &amp; Express Cargo Network</span>
+              <span>Conceptual Logistics Network</span>
             </div>
 
             {/* Main Headline */}
@@ -68,8 +68,8 @@ export function Hero({ onOpenQuoteModal, onQuickTrack }: HeroProps) {
 
             {/* Supporting Subtext */}
             <p className="text-base sm:text-lg lg:text-xl text-slate-300 max-w-2xl xl:max-w-3xl font-normal leading-relaxed mx-auto lg:mx-0">
-              Reliable courier, logistics and delivery solutions designed to move your shipments
-              faster and smarter across domestic and global trade lanes.
+              Explore a conceptual courier and logistics experience with sample service details,
+              demo tracking records, and illustrative pricing.
             </p>
 
             {/* CTA Button Group */}
@@ -114,15 +114,15 @@ export function Hero({ onOpenQuoteModal, onQuickTrack }: HeroProps) {
             <div className="pt-6 border-t border-white/10 grid grid-cols-3 gap-4 text-slate-300 text-xs sm:text-sm">
               <div className="flex items-center gap-2 justify-center lg:justify-start">
                 <ShieldCheck className="w-4 h-4 text-emerald-400 flex-shrink-0" />
-                <span>Zero-Loss Guarantee</span>
+                <span>Secure Shipment Handling</span>
               </div>
               <div className="flex items-center gap-2 justify-center lg:justify-start">
                 <Clock className="w-4 h-4 text-orange-400 flex-shrink-0" />
-                <span>Scheduled Pickups</span>
+                <span>Sample Pickup Flow</span>
               </div>
               <div className="flex items-center gap-2 justify-center lg:justify-start">
                 <MapPin className="w-4 h-4 text-blue-400 flex-shrink-0" />
-                <span>Pan-India Reach</span>
+                <span>Sample Network Model</span>
               </div>
             </div>
           </div>

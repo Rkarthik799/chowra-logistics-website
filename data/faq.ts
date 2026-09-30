@@ -4,37 +4,37 @@ export const FAQ_DATA: FAQItem[] = [
   {
     id: "faq-1",
     question: "How do I track my shipment with Chowra Logistics?",
-    answer: "You can track your package 24/7 by entering your unique tracking number (e.g., CHW10001) in the 'Track Your Shipment' search bar on our homepage. You will instantly view the current status, past sorting milestones, route progress, and estimated delivery schedule.",
+    answer: "This assignment includes a tracking demo. Enter a sample AWB such as CHW10001 in the tracking section to view illustrative status, milestones, route progress, and estimated delivery details. These records do not represent real shipments.",
     category: "Tracking",
   },
   {
     id: "faq-2",
     question: "What is the difference between Express Delivery and Standard Courier?",
-    answer: "Standard Courier is cost-optimized for non-urgent parcels using scheduled interstate linehaul transit (typically 2-4 business days). Express Delivery prioritizes your consignment with next-flight-out air connectivity or dedicated express road corridors for same-day or next-day delivery.",
+    answer: "In this conceptual service model, standard courier represents a cost-focused option and express delivery represents a priority option. The routes and delivery estimates are illustrative only.",
     category: "Delivery & Pickup",
   },
   {
     id: "faq-3",
     question: "How does the Rate Calculator work?",
-    answer: "Our online calculator provides an instant estimated quotation based on origin, destination, parcel weight, package category, and service speed. Note that final charges may vary slightly based on volumetric dimensional weight and applicable service taxes.",
+    answer: "The sample pricing calculator uses origin, destination, parcel weight, package category, and service speed to produce an illustrative estimate. It does not represent official Chowra tariffs.",
     category: "Shipping Rates",
   },
   {
     id: "faq-4",
     question: "Can I request a scheduled doorstep pickup?",
-    answer: "Yes, our Door-to-Door Delivery service includes doorstep pickup from your residential or office location. Simply book your consignment online or contact customer support to designate your preferred pickup window.",
+    answer: "The conceptual door-to-door service profile demonstrates a sample pickup and delivery workflow; this website does not arrange actual shipments.",
     category: "Delivery & Pickup",
   },
   {
     id: "faq-5",
     question: "What enterprise logistics solutions do you offer for businesses?",
-    answer: "For corporate clients, we provide customized service-level agreements (SLAs), bulk dispatch discounts, dedicated account managers, consolidated monthly billing, API integration for automated airway bill generation, and reverse logistics.",
+    answer: "The sample enterprise profile illustrates possible service-level agreements (SLAs), bulk dispatch, account management, billing, API integration, and reverse logistics concepts. These are not confirmed company offerings.",
     category: "Enterprise Solutions",
   },
   {
     id: "faq-6",
     question: "What should I do if my tracking number shows 'Not Found'?",
-    answer: "Please verify that the tracking code was entered correctly without special characters or spaces. For newly booked consignments, electronic tracking information typically reflects within 30-60 minutes after initial pickup scan. For demo purposes, you can try CHW10001, CHW10002, or CHW10003.",
+    answer: "Check that the sample code is entered correctly. This demo recognizes CHW10001, CHW10002, and CHW10003; it does not connect to a live shipment system.",
     category: "Tracking",
   },
 ];

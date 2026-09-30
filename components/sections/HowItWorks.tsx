@@ -31,9 +31,9 @@ export function HowItWorks() {
     <section className="py-20 bg-slate-50 border-y border-slate-200/60 relative">
       <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <SectionHeading
-          badge="Seamless Delivery Workflow"
+          badge="Sample Delivery Workflow"
           title="How It Works"
-          subtitle="A simplified 4-step logistics journey designed for transparency, speed, and absolute reliability from origin to destination."
+          subtitle="A conceptual four-step journey included to demonstrate a shipment workflow."
         />
 
         {/* 4 Steps Container: Desktop Horizontal Grid, Mobile Vertical Stack */}

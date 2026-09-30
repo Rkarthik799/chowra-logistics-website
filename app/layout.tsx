@@ -9,10 +9,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://chowra-logistics.vercel.app"),
-  title: "Chowra Logistics & Couriers Limited | Reliable Logistics Solutions",
+  metadataBase: new URL("https://example.com"),
+  title: "Chowra Logistics | Conceptual Logistics Website Demo",
   description:
-    "Reliable courier, express delivery, e-commerce logistics, freight and door-to-door delivery solutions designed to move your shipments with confidence.",
+    "A technical-round assignment featuring conceptual Chowra branding, sample logistics content, demo tracking, and an illustrative pricing calculator.",
   keywords: [
     "Chowra Logistics",
     "Courier Services",
@@ -27,28 +27,28 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Karthik Ramanadham" }],
   creator: "Karthik Ramanadham for SAC Info Tech Solutions",
-  publisher: "Chowra Logistics and Couriers Limited",
+  publisher: "Technical Assignment Demo",
   openGraph: {
-    title: "Chowra Logistics & Couriers Limited | Reliable Logistics Solutions",
+    title: "Chowra Logistics | Conceptual Logistics Website Demo",
     description:
-      "Reliable courier, express delivery, e-commerce logistics, freight and door-to-door delivery solutions designed to move your shipments with confidence.",
+      "Technical-round assignment with conceptual branding, sample logistics content, demo tracking, and illustrative pricing.",
     type: "website",
     locale: "en_IN",
-    siteName: "Chowra Logistics & Couriers Limited",
+    siteName: "Chowra Logistics Conceptual Demo",
     images: [
       {
         url: "/logo/chowra-logo.svg",
         width: 1200,
         height: 630,
-        alt: "Chowra Logistics and Couriers Limited",
+        alt: "Conceptual Chowra Logistics demonstration logo",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Chowra Logistics & Couriers Limited | Reliable Logistics Solutions",
+    title: "Chowra Logistics | Conceptual Logistics Website Demo",
     description:
-      "Reliable courier, express delivery, e-commerce logistics, freight and door-to-door delivery solutions designed to move your shipments with confidence.",
+      "Technical-round assignment with conceptual branding, sample logistics content, demo tracking, and illustrative pricing.",
   },
   icons: {
     icon: "/logo/chowra-mark.svg",

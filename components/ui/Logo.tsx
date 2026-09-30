@@ -13,12 +13,12 @@ export interface LogoProps {
 }
 
 /**
- * Chowra Logistics & Couriers Limited - Official Vector Brand Emblem
+ * Chowra Logistics & Couriers Limited - Conceptual Vector Brand Emblem
  * Features:
  * - Sweeping orange roadway with dashed lane markings (#FF7A00)
  * - Upper velocity arc transitioning into an ascending aircraft (#083091 / #1E6BD6)
  * - Speeding linehaul truck with horizontal acceleration speed lines
- * - Signature "CHOWRA™" typography with custom upward orange triangle in letter "A"
+ * - Signature "CHOWRA" typography with custom upward orange triangle in letter "A"
  * - Supporting tagline: "— Connecting People. Delivering Possibilities. —"
  */
 export function ChowraEmblem({
@@ -226,14 +226,11 @@ export function Logo({
               </svg>
             </div>
 
-            <span className="text-[10px] font-bold text-slate-400 align-super ml-0.5 -mt-2">
-              TM
-            </span>
           </div>
 
           {showConceptBadge && (
             <span className="hidden sm:inline-block text-[9px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-orange-500/20 text-[#FF7A00] border border-orange-500/30">
-              Official
+              Conceptual
             </span>
           )}
         </div>

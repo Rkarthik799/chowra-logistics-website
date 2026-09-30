@@ -10,7 +10,7 @@
 
 ## 1. Project Overview
 
-This project is a modern, high-performance, responsive corporate homepage and digital logistics hub for **CHOWRA LOGISTICS AND COURIERS LIMITED**. Developed as a comprehensive technical-round assignment for **SAC Info Tech Solutions**, it demonstrates production-grade frontend architecture, interactive user experiences (including live shipment tracking simulation, rate calculation formulas, and quick quote dispatch), rigorous TypeScript type safety, and an original conceptual visual identity.
+This project is a responsive conceptual logistics website for **CHOWRA LOGISTICS AND COURIERS LIMITED**, created as a technical-round assignment for **SAC Info Tech Solutions**. It demonstrates frontend architecture and interactive experiences including demo shipment tracking, illustrative rate calculations, and a sample quote flow. The visual identity and company content are conceptual and created for demonstration purposes.
 
 The web application is engineered to feel like an authentic, high-traffic enterprise logistics carrier website (comparable to Blue Dart, FedEx, or DHL) rather than an academic prototype.
 
@@ -32,7 +32,7 @@ The web application is engineered to feel like an authentic, high-traffic enterp
 ## 3. Brand Identity & Visual Design System
 
 ### Conceptual Branding Note
-> **Assignment Notice:** The company logo, graphic elements, and brand color tokens are original conceptual design assets created specifically for this technical assignment because no official brand kit was provided. All addresses, phone numbers, client marks, and coverage statistics are treated as illustrative sample content.
+> **Assignment Notice:** The company logo, graphic elements, and brand color tokens are original conceptual design assets created specifically for this technical assignment because no official brand kit was provided. All addresses, phone numbers, rates, statistics, shipment records, testimonials, network figures, and customer references are illustrative sample content.
 
 ### Color Palette
 - **Corporate Primary (Deep Navy):** `#0B2D4D` — Communicates authority, dependability, and corporate stability.
@@ -59,7 +59,7 @@ HEADER / STICKY NAVBAR
         ↓
 HERO SECTION (Headline, Visual Telemetry & Quick Chips)
         ↓
-QUICK TRUST INDICATORS (10K+ Shipments, 50+ Cities, 98% On-Time, 24/7 Support)
+SAMPLE METRICS (Illustrative figures for technical evaluation)
         ↓
 TRACK YOUR SHIPMENT (Functional AWB Lookups & Milestone Timeline)
         ↓
@@ -75,7 +75,7 @@ WHY CHOOSE CHOWRA (6 Core Operational Pillars)
         ↓
 CUSTOMERS & PARTNERS (6 Industry Sectors & Sample Badges)
         ↓
-CLIENT TESTIMONIALS (Verified-style Customer Reviews)
+SAMPLE TESTIMONIALS (Fictional demonstration content)
         ↓
 FREQUENTLY ASKED QUESTIONS (Expandable Accordion)
         ↓
@@ -92,8 +92,9 @@ PROFESSIONAL MULTI-COLUMN FOOTER
 - Prominent search input with auto-formatting.
 - **Demo AWB Numbers to test:**
   - `CHW10001` &rarr; Status: **In Transit** (Hyderabad &rarr; Mumbai, current: Pune Zonal Sorting Hub).
-  - `CHW10002` &rarr; Status: **Delivered** (Bengaluru &rarr; Delhi NCR, delivered to Saket).
-  - `CHW10003` &rarr; Status: **Out for Delivery** (Chennai &rarr; Kolkata, associate en route).
+  - `CHW10002` &rarr; Sample status: **Delivered** (Bengaluru &rarr; Delhi NCR).
+  - `CHW10003` &rarr; Sample status: **Out for Delivery** (Chennai &rarr; Kolkata).
+- All tracking records are fictional demo data and do not represent real shipments.
 - **Interactive Timeline:** Order Confirmed &rarr; Picked Up &rarr; In Transit &rarr; Out for Delivery &rarr; Delivered.
 - **Input Validation:** Clear inline error when entering an empty or unregistered tracking code.
 
@@ -112,7 +113,7 @@ PROFESSIONAL MULTI-COLUMN FOOTER
 
 ### C. 7 Core Logistics Solutions (`/data/services.ts`)
 1. **Domestic Courier** — Pan-India surface and express network.
-2. **International Courier** — 180+ countries cross-border customs solutions.
+2. **International Courier** — Illustrative cross-border customs and shipping concepts.
 3. **Express Delivery** — Time-critical same-day / next-flight dispatches.
 4. **E-commerce Logistics** — Multi-channel fulfillment, COD reconciliation, and reverse pickup.
 5. **Freight & Cargo** — Full Truckload (FTL) and Part Truckload (PTL) heavy haulage.
@@ -123,7 +124,7 @@ PROFESSIONAL MULTI-COLUMN FOOTER
 ### D. Interactive Route & Hub Map (`/data/network.ts`)
 - Stylized vector network connecting Hyderabad HQ, Mumbai, Delhi, Bengaluru, Kolkata, Chennai, Ahmedabad, and Pune.
 - Filter hubs by regional zone: *All*, *South*, *North*, *West*, *East*.
-- Dynamic hub dossier displaying operational facility address, coverage footprint, and daily sorting capacity.
+- Dynamic hub dossier displaying illustrative sample locations, coverage, and capacity figures.
 
 ### E. Quick Quote & Inquiries Modal
 - Accessible modal dialog for quote submissions.
@@ -194,7 +195,7 @@ chowra-logistics-website/
 
 ## 7. Responsive Design Breakpoints
 
-The website has been architected and verified across all standard responsive viewport widths:
+The website layout includes responsive treatments for standard viewport widths:
 - **Desktop Large (1440px / 1280px):** 4-column service grids, dual-column telemetry hero layout, horizontal milestone timeline, and interactive network map.
 - **Laptop / Small Desktop (1024px):** Scaled typography, 3-column service grid, sticky header with compact navigation.
 - **Tablet (768px / 834px):** 2-column service and feature cards, stacked rate calculator, and touch-optimized hit targets.

@@ -9,30 +9,30 @@ export function TrustStats() {
     {
       value: "10K+",
       label: "Shipments Delivered",
-      description: "Successfully processed through our multi-modal dispatch network.",
+      description: "Illustrative figure for technical evaluation.",
       icon: <PackageCheck className="w-5 h-5" />,
-      trend: "Consistent Monthly Growth",
+      trend: "Sample Metric",
     },
     {
       value: "50+",
       label: "Cities Covered",
-      description: "Direct linehaul connectivity spanning key industrial & consumer hubs.",
+      description: "Illustrative figure for technical evaluation.",
       icon: <MapPin className="w-5 h-5" />,
-      trend: "Tier 1 & Tier 2 Grid",
+      trend: "Sample Metric",
     },
     {
       value: "98%",
       label: "On-Time Delivery",
-      description: "Consistently meeting scheduled delivery SLAs across domestic routes.",
+      description: "Illustrative figure for technical evaluation.",
       icon: <CheckCircle className="w-5 h-5" />,
-      trend: "High Reliability SLA",
+      trend: "Sample Metric",
     },
     {
       value: "24/7",
-      label: "Tracking Support",
-      description: "Live GPS telemetry updates and dedicated shipment support specialists.",
+      label: "Tracking Demo",
+      description: "Illustrative support figure for technical evaluation.",
       icon: <Headphones className="w-5 h-5" />,
-      trend: "Real-Time Telemetry",
+      trend: "Sample Metric",
     },
   ];
 
@@ -58,10 +58,9 @@ export function TrustStats() {
           <div className="flex items-center gap-1.5">
             <Info className="w-3.5 h-3.5 text-[#1565C0]" />
             <span>
-              <strong>Sample Marketing Figures:</strong> Provided for technical evaluation purposes.
+              <strong>Sample Metrics:</strong> Illustrative figures for technical evaluation.
             </span>
           </div>
-          <span className="text-slate-600">Continuous Service Quality Monitoring</span>
         </div>
       </div>
     </section>

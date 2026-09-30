@@ -39,9 +39,9 @@ export function PartnersSection() {
     <section className="py-20 bg-slate-50 border-t border-slate-200/60 relative">
       <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <SectionHeading
-          badge="Enterprise &amp; Industry Categories"
-          title="Trusted by Businesses"
-          subtitle="Delivering purpose-built linehaul transit, automated fulfillment workflows, and dependable logistics support across key commercial sectors."
+          badge="Industries We Serve"
+          title="Sample Customer Profiles"
+          subtitle="Illustrative industry profiles show how logistics services could support different business sectors. They do not identify actual customers or partners."
         />
 
         {/* 6 Industry Sector Cards */}
@@ -68,7 +68,7 @@ export function PartnersSection() {
               </div>
 
               <div className="mt-4 pt-3 border-t border-slate-100 text-[11px] text-slate-400">
-                Custom SLA &amp; Volume Tariffs Available
+                Illustrative Service Profile
               </div>
             </div>
           ))}
@@ -78,7 +78,7 @@ export function PartnersSection() {
         <div className="mt-12 rounded-2xl bg-white border border-slate-200 p-6">
           <div className="text-center mb-5">
             <span className="text-xs uppercase font-bold tracking-wider text-slate-400">
-              Sample Conceptual Enterprise Clients (Demonstration Portfolio)
+              Sample Customer Profiles (Conceptual Demonstration)
             </span>
           </div>
 
