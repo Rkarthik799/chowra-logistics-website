@@ -210,7 +210,7 @@ export function Footer() {
               <div className="flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-[#FF7A00]" />
                 <h4 className="text-xs sm:text-sm font-bold uppercase tracking-wider text-white">
-                  Official Brand Assets &amp; Logo Types
+                  Conceptual Brand Assets
                 </h4>
               </div>
               <p className="text-xs text-slate-400 mt-1">
