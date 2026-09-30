@@ -35,8 +35,8 @@ export function CTASection({ onOpenQuoteModal }: CTASectionProps) {
         }}
       />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="max-w-3xl mx-auto text-center space-y-6">
+      <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 relative z-10">
+        <div className="max-w-4xl 2xl:max-w-5xl mx-auto text-center space-y-6">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 text-orange-300 text-xs font-semibold border border-white/15">
             <Zap className="w-3.5 h-3.5 text-[#FF7A00]" />
             <span>Accelerate Your Dispatch Operations</span>
@@ -46,7 +46,7 @@ export function CTASection({ onOpenQuoteModal }: CTASectionProps) {
             Ready to Move Your Next Shipment?
           </h2>
 
-          <p className="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg lg:text-xl text-slate-300 leading-relaxed max-w-3xl mx-auto">
             Get reliable logistics support for your personal and business delivery needs.
             Seamless booking, real-time GPS milestone tracking, and transparent pricing.
           </p>
@@ -59,7 +59,7 @@ export function CTASection({ onOpenQuoteModal }: CTASectionProps) {
               rightIcon={<ArrowRight className="w-5 h-5" />}
               className="w-full sm:w-auto shadow-xl shadow-orange-500/30 text-base font-bold cursor-pointer"
             >
-              Get a Free Quote
+              Get a Quote
             </Button>
 
             <Button
@@ -69,7 +69,7 @@ export function CTASection({ onOpenQuoteModal }: CTASectionProps) {
               leftIcon={<Search className="w-5 h-5 text-orange-400" />}
               className="w-full sm:w-auto bg-white/10 text-white border-white/20 hover:bg-white/20 hover:border-white/40 cursor-pointer text-base"
             >
-              Track Active Shipment
+              Track Shipment
             </Button>
           </div>
 

@@ -63,11 +63,11 @@ export default function HomePage() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#F5F8FC] selection:bg-[#FF7A00] selection:text-white">
+    <div className="min-h-screen w-full flex flex-col bg-[#F5F8FC] selection:bg-[#FF7A00] selection:text-white overflow-x-hidden">
       {/* 1. Sticky Navigation Header */}
       <Navbar onOpenQuoteModal={() => handleOpenQuoteModal()} />
 
-      <main className="flex-grow">
+      <main className="flex-grow w-full">
         {/* 2. Hero Section */}
         <Hero
           onOpenQuoteModal={() => handleOpenQuoteModal()}

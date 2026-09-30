@@ -8,14 +8,14 @@ import { Star, Quote, CheckCircle, Info } from "lucide-react";
 export function Testimonials() {
   return (
     <section className="py-20 bg-white scroll-mt-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <SectionHeading
           badge="Customer Experiences"
           title="What Our Business Clients Say"
           subtitle="Feedback from enterprise logistics leaders and e-commerce founders on their dispatch experience with Chowra Logistics."
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 xl:gap-10">
           {TESTIMONIALS_DATA.map((t) => (
             <div
               key={t.id}

@@ -51,11 +51,10 @@ export function Navbar({ onOpenQuoteModal }: NavbarProps) {
 
   const navLinks = [
     { label: "Home", href: "#home", id: "home" },
-    { label: "Track Shipment", href: "#tracking", id: "tracking" },
     { label: "Services", href: "#services", id: "services" },
+    { label: "Tracking", href: "#tracking", id: "tracking" },
     { label: "Network", href: "#network", id: "network" },
-    { label: "Rate Calculator", href: "#calculator", id: "calculator" },
-    { label: "Why Chowra", href: "#why-us", id: "why-us" },
+    { label: "About", href: "#about", id: "about" },
     { label: "Contact", href: "#contact", id: "contact" },
   ];
 
@@ -70,17 +69,15 @@ export function Navbar({ onOpenQuoteModal }: NavbarProps) {
   return (
     <>
       {/* Top Professional Utility Notice Bar */}
-      <div className="bg-[#071E34] text-slate-300 text-xs py-2 px-4 border-b border-white/5 relative z-50">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+      <div className="bg-[#071E34] text-slate-300 text-xs py-2 px-4 sm:px-6 lg:px-8 xl:px-12 border-b border-white/5 relative z-50">
+        <div className="w-full max-w-[1720px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
           <div className="flex items-center gap-2">
             <span className="flex h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
             <span className="text-slate-300 font-medium">
               Pan-India Express Logistics Network Operational
             </span>
             <span className="hidden md:inline-block text-slate-500">|</span>
-            <span className="hidden md:inline-block text-orange-400 text-[11px] font-semibold">
-              Assignment Demo Site
-            </span>
+
           </div>
           <div className="flex items-center gap-5 text-slate-300">
             <span className="hidden sm:inline-flex items-center gap-1.5 hover:text-white">
@@ -92,7 +89,7 @@ export function Navbar({ onOpenQuoteModal }: NavbarProps) {
               className="inline-flex items-center gap-1.5 text-slate-200 hover:text-orange-400 font-medium transition-colors"
             >
               <PhoneCall className="w-3.5 h-3.5 text-orange-400" />
-              <span>1800-200-CHOWRA (Demo)</span>
+              <span>1800-200-CHOWRA </span>
             </a>
           </div>
         </div>
@@ -100,13 +97,12 @@ export function Navbar({ onOpenQuoteModal }: NavbarProps) {
 
       {/* Main Sticky Header */}
       <header
-        className={`sticky top-0 z-40 transition-all duration-300 ${
-          isScrolled
-            ? "bg-[#0B2D4D]/95 backdrop-blur-md shadow-lg shadow-black/10 py-3"
-            : "bg-[#0B2D4D] py-4"
-        }`}
+        className={`sticky top-0 z-40 transition-all duration-300 ${isScrolled
+          ? "bg-[#0B2D4D]/95 backdrop-blur-md shadow-lg shadow-black/10 py-3"
+          : "bg-[#0B2D4D] py-4"
+          }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
           <div className="flex items-center justify-between">
             {/* Brand Logo */}
             <div className="flex items-center gap-2">
@@ -121,11 +117,10 @@ export function Navbar({ onOpenQuoteModal }: NavbarProps) {
                   <button
                     key={link.id}
                     onClick={() => handleNavClick(link.href)}
-                    className={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 cursor-pointer ${
-                      isActive
-                        ? "text-orange-400 bg-white/10"
-                        : "text-slate-200 hover:text-white hover:bg-white/5"
-                    }`}
+                    className={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 cursor-pointer ${isActive
+                      ? "text-orange-400 bg-white/10"
+                      : "text-slate-200 hover:text-white hover:bg-white/5"
+                      }`}
                   >
                     {link.label}
                   </button>
@@ -177,7 +172,7 @@ export function Navbar({ onOpenQuoteModal }: NavbarProps) {
 
         {/* Mobile Dropdown Menu Drawer */}
         {mobileMenuOpen && (
-          <div className="lg:hidden fixed inset-x-0 top-[calc(100%+1px)] bg-[#0B2D4D]/98 backdrop-blur-xl border-b border-white/10 shadow-2xl px-5 py-6 transition-all animate-in slide-in-from-top duration-200">
+          <div className="lg:hidden absolute top-full left-0 right-0 w-full bg-[#0B2D4D]/98 backdrop-blur-xl border-b border-white/10 shadow-2xl px-5 py-6 transition-all animate-in slide-in-from-top duration-200">
             <div className="flex flex-col space-y-2">
               {navLinks.map((link) => {
                 const isActive = activeSection === link.id;
@@ -185,11 +180,10 @@ export function Navbar({ onOpenQuoteModal }: NavbarProps) {
                   <button
                     key={link.id}
                     onClick={() => handleNavClick(link.href)}
-                    className={`flex items-center justify-between px-4 py-3 rounded-xl text-base font-semibold transition-all text-left ${
-                      isActive
-                        ? "bg-[#1565C0] text-white"
-                        : "text-slate-200 hover:bg-white/5 hover:text-white"
-                    }`}
+                    className={`flex items-center justify-between px-4 py-3 rounded-xl text-base font-semibold transition-all text-left ${isActive
+                      ? "bg-[#1565C0] text-white"
+                      : "text-slate-200 hover:bg-white/5 hover:text-white"
+                      }`}
                   >
                     <span>{link.label}</span>
                     <ChevronRight className="w-4 h-4 text-slate-400" />
@@ -208,12 +202,12 @@ export function Navbar({ onOpenQuoteModal }: NavbarProps) {
                   }}
                   rightIcon={<ArrowRight className="w-4 h-4" />}
                 >
-                  Get a Free Rate Quote
+                  Get a Quote
                 </Button>
 
                 <div className="flex items-center justify-center gap-2 text-xs text-slate-400 pt-2">
                   <PhoneCall className="w-3.5 h-3.5 text-orange-400" />
-                  <span>24/7 Helpline: 1800-200-CHOWRA (Demo)</span>
+                  <span>24/7 Helpline: 1800-200-CHOWRA </span>
                 </div>
               </div>
             </div>

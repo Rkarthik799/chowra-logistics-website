@@ -8,6 +8,7 @@ import {
   getShipmentByTrackingId,
   SAMPLE_TRACKING_IDS,
 } from "@/data/trackingData";
+import { ChowraEmblem } from "@/components/ui/Logo";
 import { ShipmentTracking, TrackingCheckpoint } from "@/types";
 import {
   Search,
@@ -112,7 +113,7 @@ export function TrackingSection({
 
   return (
     <section id="tracking" className="py-20 bg-[#F5F8FC] scroll-mt-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <SectionHeading
           badge="Live Consignment Telemetry"
           title="Track Your Shipment"
@@ -120,14 +121,14 @@ export function TrackingSection({
         />
 
         {/* Tracking Input Card */}
-        <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl shadow-slate-200/60 border border-slate-200 p-6 sm:p-8">
+        <div className="max-w-5xl 2xl:max-w-6xl mx-auto bg-white rounded-3xl shadow-xl shadow-slate-200/60 border border-slate-200 p-6 sm:p-8 lg:p-10">
           <form onSubmit={handleFormSubmit} className="space-y-4">
             <div className="flex flex-col sm:flex-row gap-3">
               <div className="flex-1 relative">
                 <Input
                   id="tracking-input"
                   type="text"
-                  placeholder="e.g. CHW10001, CHW10002, CHW10003"
+                  placeholder="Enter Tracking Number (e.g. CHW10001, CHW10002, CHW10003)"
                   value={trackingInput}
                   onChange={(e) => {
                     setTrackingInput(e.target.value);
@@ -202,20 +203,25 @@ export function TrackingSection({
           {/* Shipment Result Details View */}
           {activeShipment && !isLoading && (
             <div className="mt-8 pt-8 border-t border-slate-200 animate-in fade-in duration-300">
-              {/* Header: Tracking ID + Status Badge */}
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-slate-50 rounded-xl p-5 border border-slate-200/80">
-                <div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-xs uppercase font-bold text-slate-500 tracking-wider">
-                      Tracking ID
-                    </span>
-                    <span className="text-xs px-2 py-0.5 rounded bg-blue-100 text-[#1565C0] font-semibold">
-                      {activeShipment.serviceType}
-                    </span>
+              {/* Header: Tracking ID + Status Badge + Official Emblem */}
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-slate-50 rounded-2xl p-5 sm:p-6 border border-slate-200/80">
+                <div className="flex items-center gap-4">
+                  <div className="hidden sm:flex p-2 rounded-xl bg-white border border-slate-200 shadow-xs">
+                    <ChowraEmblem theme="light" size={38} />
                   </div>
-                  <h3 className="text-2xl font-black text-[#0B2D4D] font-mono tracking-tight mt-1">
-                    {activeShipment.trackingId}
-                  </h3>
+                  <div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs uppercase font-bold text-slate-500 tracking-wider">
+                        Official Consignment AWB
+                      </span>
+                      <span className="text-xs px-2.5 py-0.5 rounded-full bg-blue-100 text-[#083091] font-semibold">
+                        {activeShipment.serviceType}
+                      </span>
+                    </div>
+                    <h3 className="text-2xl sm:text-3xl font-black text-[#083091] font-mono tracking-tight mt-1">
+                      {activeShipment.trackingId}
+                    </h3>
+                  </div>
                 </div>
 
                 <div className="flex flex-col sm:items-end">

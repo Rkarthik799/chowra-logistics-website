@@ -42,7 +42,7 @@ export function ServicesSection({ onOpenQuoteModal }: ServicesSectionProps) {
       {/* Background Subtle Gradient */}
       <div className="absolute top-1/2 left-0 w-72 h-72 bg-blue-50/50 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 relative z-10">
         <SectionHeading
           badge="End-to-End Capabilities"
           title="Our Logistics Solutions"
@@ -50,7 +50,7 @@ export function ServicesSection({ onOpenQuoteModal }: ServicesSectionProps) {
         />
 
         {/* 7 Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 xl:gap-8">
           {SERVICES_DATA.map((service, index) => {
             // Give Corporate Logistics a featured span on large screens or keep consistent
             const isFeatured = service.id === "corporate-logistics";

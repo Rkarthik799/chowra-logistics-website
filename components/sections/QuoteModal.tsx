@@ -17,6 +17,7 @@ import {
   MapPin,
   Sparkles,
 } from "lucide-react";
+import { ChowraEmblem } from "@/components/ui/Logo";
 
 interface PrefillDetails {
   origin?: string;
@@ -114,17 +115,17 @@ export function QuoteModal({ isOpen, onClose, prefillData }: QuoteModalProps) {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm p-4 overflow-y-auto animate-in fade-in duration-200">
-      <div className="relative w-full max-w-2xl bg-white rounded-3xl shadow-2xl border border-slate-200 overflow-hidden my-8">
+      <div className="relative w-full max-w-2xl sm:max-w-3xl bg-white rounded-3xl shadow-2xl border border-slate-200 overflow-hidden my-8">
         {/* Header */}
         <div className="bg-[#0B2D4D] text-white p-6 sm:p-7 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#1565C0] text-white">
-              <FileText className="w-6 h-6" />
+          <div className="flex items-center gap-3.5">
+            <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#083091] p-1.5 text-white border border-white/15 shadow-sm">
+              <ChowraEmblem theme="dark" size={36} />
             </div>
             <div>
               <h3 className="text-xl font-bold">Request a Logistics Quote</h3>
               <p className="text-xs text-slate-300 mt-0.5">
-                Instant preliminary assessment for business &amp; individual cargo
+                Official preliminary tariff assessment for business &amp; individual shipments
               </p>
             </div>
           </div>

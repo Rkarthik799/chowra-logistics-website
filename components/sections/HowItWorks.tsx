@@ -29,7 +29,7 @@ export function HowItWorks() {
 
   return (
     <section className="py-20 bg-slate-50 border-y border-slate-200/60 relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <SectionHeading
           badge="Seamless Delivery Workflow"
           title="How It Works"
@@ -41,7 +41,7 @@ export function HowItWorks() {
           {/* Desktop Connecting Line behind cards */}
           <div className="hidden lg:block absolute top-1/2 left-10 right-10 h-0.5 bg-gradient-to-r from-blue-200 via-orange-300 to-emerald-300 -translate-y-6 z-0" />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 xl:gap-8 relative z-10">
             {PROCESS_STEPS.map((step, idx) => (
               <div
                 key={step.stepNumber}

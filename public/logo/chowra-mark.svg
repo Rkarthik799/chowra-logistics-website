@@ -1,17 +1,63 @@
-<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="120" height="120" viewBox="0 0 110 100" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="markNavyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stopColor="#1565C0" />
-      <stop offset="100%" stopColor="#0B2D4D" />
+    <linearGradient id="markBlueArc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#1E6BD6" />
+      <stop offset="100%" stopColor="#083091" />
     </linearGradient>
-    <linearGradient id="markOrangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stopColor="#FF9E40" />
+    <linearGradient id="markRoad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#FF9A3D" />
       <stop offset="100%" stopColor="#FF7A00" />
     </linearGradient>
   </defs>
 
-  <rect x="2" y="2" width="60" height="60" rx="16" fill="#0B2D4D" stroke="#1565C0" stroke-width="2" />
-  <path d="M 44 19 C 35 12, 20 14, 15 25 C 10 36, 12 48, 22 53 C 31 57, 40 54, 47 48" stroke="url(#markNavyGrad)" stroke-width="7" stroke-linecap="round" fill="none" />
-  <path d="M 24 32 L 48 32 M 39 23 L 49 32 L 39 41" stroke="url(#markOrangeGrad)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
-  <circle cx="53" cy="32" r="2.5" fill="#FF7A00" />
+  <!-- Upper Blue Arc -->
+  <path
+    d="M 23 44 C 21 24, 38 10, 62 10 C 74 10, 85 15, 92 23 C 94 25, 93 28, 90 28 C 76 28, 62 23, 48 27 C 34 31, 26 40, 23 44 Z"
+    fill="url(#markBlueArc)"
+  />
+
+  <!-- Ascending Airplane -->
+  <g transform="translate(68, 8) rotate(-10)">
+    <path
+      d="M 12 14 L 20 7 C 22 5, 25 5, 26 7 L 27 10 L 37 13 C 38 13.5, 38 15, 36.5 15.5 L 26.5 15.5 L 21 24 C 20.5 24.5, 19.5 24.5, 19.5 23.5 L 20.5 16.5 L 13.5 17 L 11 20 C 10.5 20.5, 9.8 20.3, 9.8 19.7 L 10.5 16.5 L 8.5 15.5 C 7.5 15, 7.5 14, 8.5 13.5 L 12 14 Z"
+      fill="#083091"
+    />
+  </g>
+
+  <!-- Sweeping Highway / Road -->
+  <path
+    d="M 16 48 C 12 66, 26 88, 54 90 C 70 91, 84 84, 94 72 C 90 73, 80 77, 68 76 C 45 74, 31 62, 28 47 Z"
+    fill="url(#markRoad)"
+  />
+
+  <!-- White Broken Lane Markings -->
+  <path
+    d="M 22 56 C 21 68, 32 82, 54 84 C 64 85, 76 81, 86 75"
+    stroke="#FFFFFF"
+    stroke-width="2.8"
+    stroke-linecap="round"
+    stroke-dasharray="6 6"
+    fill="none"
+  />
+
+  <!-- Speed Lines behind truck -->
+  <line x1="20" y1="41" x2="38" y2="41" stroke="#1E6BD6" stroke-width="2.4" stroke-linecap="round" />
+  <line x1="16" y1="46" x2="36" y2="46" stroke="#1E6BD6" stroke-width="2.6" stroke-linecap="round" />
+  <line x1="21" y1="51" x2="39" y2="51" stroke="#1E6BD6" stroke-width="2.4" stroke-linecap="round" />
+  <line x1="26" y1="56" x2="41" y2="56" stroke="#1E6BD6" stroke-width="2.2" stroke-linecap="round" />
+
+  <!-- Delivery Truck -->
+  <g transform="translate(37, 36)">
+    <rect x="4" y="0" width="26" height="16" rx="1.5" fill="#083091" />
+    <line x1="10" y1="2" x2="10" y2="14" stroke="#FFFFFF" stroke-width="1" opacity="0.4" />
+    <line x1="16" y1="2" x2="16" y2="14" stroke="#FFFFFF" stroke-width="1" opacity="0.4" />
+    <line x1="22" y1="2" x2="22" y2="14" stroke="#FFFFFF" stroke-width="1" opacity="0.4" />
+    <path d="M 30 5 L 37 5 C 38.5 5, 40 6.5, 41 8.5 L 43 12.5 C 43.5 13.5, 43.5 16, 42.5 16 L 30 16 Z" fill="#083091" />
+    <path d="M 33 7 L 37 7 C 37.8 7, 38.8 7.8, 39.4 9 L 40.5 11.5 L 33 11.5 Z" fill="#60A5FA" />
+    <rect x="42" y="13.5" width="2" height="2" rx="0.5" fill="#FF7A00" />
+    <circle cx="11" cy="16.5" r="3.8" fill="#172033" stroke="#083091" stroke-width="1.2" />
+    <circle cx="11" cy="16.5" r="1.5" fill="#FFFFFF" />
+    <circle cx="36" cy="16.5" r="3.8" fill="#172033" stroke="#083091" stroke-width="1.2" />
+    <circle cx="36" cy="16.5" r="1.5" fill="#FFFFFF" />
+  </g>
 </svg>

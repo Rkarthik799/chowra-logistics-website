@@ -16,9 +16,10 @@ import {
   Info,
   CheckCircle2,
   AlertCircle,
-  ArrowRight,
   ShieldCheck,
+  ArrowRight,
 } from "lucide-react";
+import { ChowraEmblem } from "@/components/ui/Logo";
 
 interface RateCalculatorProps {
   onBookWithEstimate?: (estimateDetails: {
@@ -37,7 +38,15 @@ export function RateCalculator({ onBookWithEstimate }: RateCalculatorProps) {
   const [serviceType, setServiceType] = useState<ServiceType>("Standard");
   const [packageType, setPackageType] = useState<PackageType>("Parcel");
 
-  const [estimate, setEstimate] = useState<RateEstimate | null>(null);
+  const [estimate, setEstimate] = useState<RateEstimate | null>(() =>
+    calculateEstimatedRate({
+      origin: "Hyderabad",
+      destination: "Mumbai",
+      weight: 2,
+      serviceType: "Standard",
+      packageType: "Parcel",
+    })
+  );
   const [validationError, setValidationError] = useState<string | null>(null);
   const [isCalculating, setIsCalculating] = useState(false);
 
@@ -50,14 +59,14 @@ export function RateCalculator({ onBookWithEstimate }: RateCalculatorProps) {
   const handleCalculate = (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (!origin || !destination) {
-      setValidationError("Please select both origin and destination cities.");
+    if (!origin || !destination || !weight.trim()) {
+      setValidationError("Please complete all required fields.");
       return;
     }
 
     const parsedWeight = parseFloat(weight);
     if (isNaN(parsedWeight) || parsedWeight <= 0) {
-      setValidationError("Please enter a valid package weight in kilograms (minimum 0.1 kg).");
+      setValidationError("Please complete all required fields.");
       return;
     }
 
@@ -81,19 +90,19 @@ export function RateCalculator({ onBookWithEstimate }: RateCalculatorProps) {
 
   return (
     <section id="calculator" className="py-20 bg-[#F5F8FC] scroll-mt-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <SectionHeading
           badge="Instant Transparent Quotation"
           title="Rate Calculator &amp; Transit Estimator"
           subtitle="Estimate your consignment tariff and anticipated transit timeline in seconds using our multi-modal logistics calculation formula."
         />
 
-        <div className="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl shadow-slate-200/80 border border-slate-200/90 overflow-hidden">
+        <div className="max-w-5xl 2xl:max-w-6xl mx-auto bg-white rounded-3xl shadow-xl shadow-slate-200/80 border border-slate-200/90 overflow-hidden">
           {/* Header Bar */}
           <div className="bg-[#0B2D4D] text-white p-6 sm:p-7 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-            <div className="flex items-center gap-3">
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#1565C0] text-white">
-                <Calculator className="w-6 h-6" />
+            <div className="flex items-center gap-3.5">
+              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#083091] p-1.5 text-white border border-white/15 shadow-sm">
+                <ChowraEmblem theme="dark" size={36} />
               </div>
               <div>
                 <h3 className="text-xl font-bold">Consignment Tariff Estimator</h3>
@@ -110,10 +119,10 @@ export function RateCalculator({ onBookWithEstimate }: RateCalculatorProps) {
 
           <form onSubmit={handleCalculate} className="p-6 sm:p-8">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-5 items-end">
-              {/* Origin City */}
+              {/* From */}
               <div className="md:col-span-5">
                 <label className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
-                  Origin City / Hub <span className="text-red-500">*</span>
+                  From <span className="text-slate-400 font-normal normal-case">(e.g. Hyderabad)</span> <span className="text-red-500">*</span>
                 </label>
                 <select
                   value={origin}
@@ -141,10 +150,10 @@ export function RateCalculator({ onBookWithEstimate }: RateCalculatorProps) {
                 </button>
               </div>
 
-              {/* Destination City */}
+              {/* To */}
               <div className="md:col-span-5">
                 <label className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
-                  Destination City / Hub <span className="text-red-500">*</span>
+                  To <span className="text-slate-400 font-normal normal-case">(e.g. Mumbai)</span> <span className="text-red-500">*</span>
                 </label>
                 <select
                   value={destination}
@@ -162,10 +171,10 @@ export function RateCalculator({ onBookWithEstimate }: RateCalculatorProps) {
 
             {/* Second Row: Weight, Service Type, Package Type */}
             <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-5">
-              {/* Weight */}
+              {/* Package Weight */}
               <div>
                 <label className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
-                  Package Weight (KG) <span className="text-red-500">*</span>
+                  Package Weight <span className="text-slate-400 font-normal normal-case">(e.g. 2 KG)</span> <span className="text-red-500">*</span>
                 </label>
                 <div className="relative">
                   <input
@@ -174,7 +183,7 @@ export function RateCalculator({ onBookWithEstimate }: RateCalculatorProps) {
                     min="0.1"
                     value={weight}
                     onChange={(e) => setWeight(e.target.value)}
-                    placeholder="e.g. 2.5"
+                    placeholder="e.g. 2"
                     className="w-full h-11 rounded-lg border border-slate-200 bg-white pl-3.5 pr-12 text-sm text-[#172033] font-medium focus:outline-none focus:ring-2 focus:ring-blue-100 focus:border-[#1565C0]"
                     required
                   />
@@ -187,32 +196,32 @@ export function RateCalculator({ onBookWithEstimate }: RateCalculatorProps) {
               {/* Service Type */}
               <div>
                 <label className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
-                  Transit Priority
+                  Service Type
                 </label>
                 <select
                   value={serviceType}
                   onChange={(e) => setServiceType(e.target.value as ServiceType)}
                   className="w-full h-11 rounded-lg border border-slate-200 bg-white px-3 text-sm text-[#172033] font-medium focus:outline-none focus:ring-2 focus:ring-blue-100 focus:border-[#1565C0]"
                 >
-                  <option value="Standard">Standard Surface (2-4 Days)</option>
-                  <option value="Express">Express Air (24-36 Hours)</option>
-                  <option value="International">International Priority (4-7 Days)</option>
+                  <option value="Standard">Standard</option>
+                  <option value="Express">Express</option>
+                  <option value="International">International</option>
                 </select>
               </div>
 
               {/* Package Type */}
               <div>
                 <label className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
-                  Package Category
+                  Package Type
                 </label>
                 <select
                   value={packageType}
                   onChange={(e) => setPackageType(e.target.value as PackageType)}
                   className="w-full h-11 rounded-lg border border-slate-200 bg-white px-3 text-sm text-[#172033] font-medium focus:outline-none focus:ring-2 focus:ring-blue-100 focus:border-[#1565C0]"
                 >
-                  <option value="Parcel">Box / Parcel</option>
-                  <option value="Document">Envelope / Document</option>
-                  <option value="Commercial">Commercial / Pallet Cargo</option>
+                  <option value="Document">Document</option>
+                  <option value="Parcel">Parcel</option>
+                  <option value="Commercial">Commercial</option>
                 </select>
               </div>
             </div>
@@ -254,12 +263,15 @@ export function RateCalculator({ onBookWithEstimate }: RateCalculatorProps) {
                     </span>
                   </div>
 
-                  <div className="mt-2 flex items-baseline gap-3">
+                  <div className="mt-2 flex items-baseline gap-3 flex-wrap">
+                    <span className="text-sm font-semibold text-slate-600">
+                      Estimated Cost:
+                    </span>
                     <span className="text-3xl sm:text-4xl font-black text-[#0B2D4D]">
                       {formatCurrency(estimate.estimatedCost)}
                     </span>
-                    <span className="text-xs text-slate-500 font-semibold uppercase">
-                      Estimated Price (Demo)
+                    <span className="text-xs px-2.5 py-0.5 rounded font-bold uppercase tracking-wider bg-blue-100 text-[#083091]">
+                      Estimated Price
                     </span>
                   </div>
 

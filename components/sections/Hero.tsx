@@ -48,8 +48,8 @@ export function Hero({ onOpenQuoteModal, onQuickTrack }: HeroProps) {
         }}
       />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+      <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 xl:gap-14 items-center">
           {/* Left Column: Headline & Value Proposition */}
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
             {/* Tagline Badge */}
@@ -67,7 +67,7 @@ export function Hero({ onOpenQuoteModal, onQuickTrack }: HeroProps) {
             </h1>
 
             {/* Supporting Subtext */}
-            <p className="text-base sm:text-lg lg:text-xl text-slate-300 max-w-2xl font-normal leading-relaxed mx-auto lg:mx-0">
+            <p className="text-base sm:text-lg lg:text-xl text-slate-300 max-w-2xl xl:max-w-3xl font-normal leading-relaxed mx-auto lg:mx-0">
               Reliable courier, logistics and delivery solutions designed to move your shipments
               faster and smarter across domestic and global trade lanes.
             </p>
@@ -81,7 +81,7 @@ export function Hero({ onOpenQuoteModal, onQuickTrack }: HeroProps) {
                 rightIcon={<ArrowRight className="w-5 h-5" />}
                 className="w-full sm:w-auto shadow-xl shadow-orange-500/25 cursor-pointer text-base"
               >
-                Get a Free Quote
+                Get a Quote
               </Button>
 
               <Button

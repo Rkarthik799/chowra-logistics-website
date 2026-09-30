@@ -21,28 +21,29 @@ export function FAQSection() {
   );
 
   return (
-    <section className="py-20 bg-slate-50 border-t border-slate-200/60 scroll-mt-20">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="faq" className="py-20 bg-slate-50 border-t border-slate-200/60 scroll-mt-20">
+      <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <SectionHeading
           badge="Frequently Asked Questions"
           title="Everything You Need to Know"
           subtitle="Answers to common questions regarding consignment tracking, dispatch schedules, pickup coordination, and enterprise service tiers."
         />
 
-        {/* FAQ Search Filter */}
-        <div className="mb-8 relative max-w-md mx-auto">
-          <input
-            type="text"
-            placeholder="Search questions (e.g. tracking, rates, pickup)..."
-            value={searchFilter}
-            onChange={(e) => setSearchFilter(e.target.value)}
-            className="w-full h-11 pl-10 pr-4 rounded-xl border border-slate-200 bg-white text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-100 focus:border-[#1565C0] shadow-sm"
-          />
-          <Search className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
-        </div>
+        <div className="max-w-5xl 2xl:max-w-6xl mx-auto">
+          {/* FAQ Search Filter */}
+          <div className="mb-8 relative max-w-lg mx-auto">
+            <input
+              type="text"
+              placeholder="Search questions (e.g. tracking, rates, pickup)..."
+              value={searchFilter}
+              onChange={(e) => setSearchFilter(e.target.value)}
+              className="w-full h-11 pl-10 pr-4 rounded-xl border border-slate-200 bg-white text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-100 focus:border-[#1565C0] shadow-sm"
+            />
+            <Search className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
+          </div>
 
-        {/* Accordion Container */}
-        <div className="space-y-3.5">
+          {/* Accordion Container (2-col on large screens) */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start">
           {filteredFaqs.map((faq) => {
             const isOpen = openId === faq.id;
 
@@ -93,6 +94,7 @@ export function FAQSection() {
               No matching questions found. Try searching for &ldquo;tracking&rdquo; or &ldquo;pickup&rdquo;.
             </div>
           )}
+          </div>
         </div>
       </div>
     </section>

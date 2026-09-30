@@ -37,7 +37,7 @@ export function TrustStats() {
   ];
 
   return (
-    <section className="relative z-20 -mt-10 sm:-mt-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative z-20 -mt-10 sm:-mt-12 w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
       {/* Container with shadow & subtle border */}
       <div className="bg-white/95 backdrop-blur-md rounded-2xl shadow-xl shadow-slate-900/5 border border-slate-200/80 p-5 sm:p-7">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">

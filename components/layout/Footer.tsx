@@ -26,7 +26,7 @@ export function Footer() {
   return (
     <footer className="bg-[#071E34] text-slate-300 border-t border-slate-800 relative z-10" id="contact">
       {/* Upper Main Footer Grid */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12">
+      <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 pt-16 pb-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           {/* Col 1 & 2: Brand Information & Technical Assignment Disclaimer */}
           <div className="lg:col-span-2 space-y-4">
@@ -59,110 +59,126 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Col 3: Quick Navigation */}
+          {/* Col 2: Company */}
           <div>
             <h4 className="text-sm font-bold uppercase tracking-wider text-white mb-4 border-l-2 border-[#FF7A00] pl-2.5">
-              Quick Links
+              Company
             </h4>
             <ul className="space-y-2.5 text-sm">
               <li>
-                <a href="#home" className="hover:text-orange-400 transition-colors flex items-center gap-1.5">
+                <a href="#about" className="hover:text-orange-400 transition-colors flex items-center gap-1.5">
                   <ChevronRight className="w-3.5 h-3.5 text-slate-500" />
-                  Home Overview
-                </a>
-              </li>
-              <li>
-                <a href="#tracking" className="hover:text-orange-400 transition-colors flex items-center gap-1.5">
-                  <ChevronRight className="w-3.5 h-3.5 text-slate-500" />
-                  Track Consignment
+                  About
                 </a>
               </li>
               <li>
                 <a href="#services" className="hover:text-orange-400 transition-colors flex items-center gap-1.5">
                   <ChevronRight className="w-3.5 h-3.5 text-slate-500" />
-                  Logistics Services
+                  Services
                 </a>
               </li>
               <li>
                 <a href="#network" className="hover:text-orange-400 transition-colors flex items-center gap-1.5">
                   <ChevronRight className="w-3.5 h-3.5 text-slate-500" />
-                  Hub Coverage Network
+                  Network
                 </a>
               </li>
               <li>
-                <a href="#calculator" className="hover:text-orange-400 transition-colors flex items-center gap-1.5">
+                <a href="#contact" className="hover:text-orange-400 transition-colors flex items-center gap-1.5">
                   <ChevronRight className="w-3.5 h-3.5 text-slate-500" />
-                  Rate Calculator
-                </a>
-              </li>
-              <li>
-                <a href="#why-us" className="hover:text-orange-400 transition-colors flex items-center gap-1.5">
-                  <ChevronRight className="w-3.5 h-3.5 text-slate-500" />
-                  Why Choose Chowra
+                  Contact
                 </a>
               </li>
             </ul>
           </div>
 
-          {/* Col 4: Core Services */}
+          {/* Col 3: Services */}
           <div>
             <h4 className="text-sm font-bold uppercase tracking-wider text-white mb-4 border-l-2 border-[#1565C0] pl-2.5">
-              Our Services
+              Services
             </h4>
             <ul className="space-y-2.5 text-sm">
               <li>
-                <a href="#services" className="hover:text-blue-400 transition-colors">
-                  Domestic Express Courier
+                <a href="#services" className="hover:text-blue-400 transition-colors flex items-center gap-1.5">
+                  <ChevronRight className="w-3.5 h-3.5 text-slate-500" />
+                  Domestic Courier
                 </a>
               </li>
               <li>
-                <a href="#services" className="hover:text-blue-400 transition-colors">
-                  International Air Courier
+                <a href="#services" className="hover:text-blue-400 transition-colors flex items-center gap-1.5">
+                  <ChevronRight className="w-3.5 h-3.5 text-slate-500" />
+                  International Courier
                 </a>
               </li>
               <li>
-                <a href="#services" className="hover:text-blue-400 transition-colors">
-                  Time-Critical Express
+                <a href="#services" className="hover:text-blue-400 transition-colors flex items-center gap-1.5">
+                  <ChevronRight className="w-3.5 h-3.5 text-slate-500" />
+                  Express Delivery
                 </a>
               </li>
               <li>
-                <a href="#services" className="hover:text-blue-400 transition-colors">
-                  E-Commerce Logistics &amp; COD
+                <a href="#services" className="hover:text-blue-400 transition-colors flex items-center gap-1.5">
+                  <ChevronRight className="w-3.5 h-3.5 text-slate-500" />
+                  E-commerce Logistics
                 </a>
               </li>
               <li>
-                <a href="#services" className="hover:text-blue-400 transition-colors">
-                  Heavy Freight &amp; Cargo
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="hover:text-blue-400 transition-colors">
-                  Door-to-Door Pickup
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="hover:text-blue-400 transition-colors">
-                  Corporate Logistics SLAs
+                <a href="#services" className="hover:text-blue-400 transition-colors flex items-center gap-1.5">
+                  <ChevronRight className="w-3.5 h-3.5 text-slate-500" />
+                  Freight &amp; Cargo
                 </a>
               </li>
             </ul>
           </div>
 
-          {/* Col 5: Sample Contact & Support */}
+          {/* Col 4: Support */}
           <div>
             <h4 className="text-sm font-bold uppercase tracking-wider text-white mb-4 border-l-2 border-[#FF7A00] pl-2.5">
-              Contact &amp; Support
+              Support
+            </h4>
+            <ul className="space-y-2.5 text-sm">
+              <li>
+                <a href="#tracking" className="hover:text-orange-400 transition-colors flex items-center gap-1.5">
+                  <ChevronRight className="w-3.5 h-3.5 text-slate-500" />
+                  Track Shipment
+                </a>
+              </li>
+              <li>
+                <a href="#faq" className="hover:text-orange-400 transition-colors flex items-center gap-1.5">
+                  <ChevronRight className="w-3.5 h-3.5 text-slate-500" />
+                  Help Center
+                </a>
+              </li>
+              <li>
+                <a href="#faq" className="hover:text-orange-400 transition-colors flex items-center gap-1.5">
+                  <ChevronRight className="w-3.5 h-3.5 text-slate-500" />
+                  FAQs
+                </a>
+              </li>
+              <li>
+                <a href="#contact" className="hover:text-orange-400 transition-colors flex items-center gap-1.5">
+                  <ChevronRight className="w-3.5 h-3.5 text-slate-500" />
+                  Contact Support
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Col 5: Contact */}
+          <div>
+            <h4 className="text-sm font-bold uppercase tracking-wider text-white mb-4 border-l-2 border-[#1565C0] pl-2.5">
+              Contact
             </h4>
             <div className="space-y-3 text-xs sm:text-sm text-slate-300">
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-orange-400 flex-shrink-0 mt-0.5" />
                 <span>
-                  Chowra Central Hub (Sample): Aero-Logistics Corridor, Shamshabad, Hyderabad 500108
+                  Chowra Central Hub: Aero-Logistics Corridor, Shamshabad, Hyderabad 500108
                 </span>
               </div>
               <div className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-orange-400 flex-shrink-0" />
-                <span>1800-200-2469 / +91 40 2999 8800 (Demo)</span>
+                <span>1800-200-2469 / +91 40 2999 8800</span>
               </div>
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-orange-400 flex-shrink-0" />
@@ -170,7 +186,7 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-2.5">
                 <Clock className="w-4 h-4 text-orange-400 flex-shrink-0" />
-                <span>24/7 Shipment Operations &amp; Support</span>
+                <span>24/7 Operations &amp; Support</span>
               </div>
             </div>
 
@@ -186,9 +202,76 @@ export function Footer() {
         </div>
       </div>
 
+      {/* Official Brand Identity Showcase (Featuring the 4 Logo Types & Color Palette) */}
+      <div className="border-t border-slate-800/80 bg-[#051728] py-8">
+        <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+          <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
+            <div>
+              <div className="flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-[#FF7A00]" />
+                <h4 className="text-xs sm:text-sm font-bold uppercase tracking-wider text-white">
+                  Official Brand Assets &amp; Logo Types
+                </h4>
+              </div>
+              <p className="text-xs text-slate-400 mt-1">
+                Approved corporate lockups across dark navy, light backgrounds, dispatch monochrome, and app icon.
+              </p>
+            </div>
+
+            {/* 4 Brand Logo Variants */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 w-full lg:w-auto">
+              {/* Type 1: Dark Navy */}
+              <div className="p-3 rounded-xl bg-[#083091] border border-blue-400/20 shadow-sm flex flex-col justify-between">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-blue-200 mb-2">Dark Navy Type</span>
+                <Logo theme="dark" variant="compact" tagline={false} />
+              </div>
+
+              {/* Type 2: Light */}
+              <div className="p-3 rounded-xl bg-white border border-slate-200 shadow-sm flex flex-col justify-between">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500 mb-2">Light Surface Type</span>
+                <Logo theme="light" variant="compact" tagline={false} />
+              </div>
+
+              {/* Type 3: Monochrome */}
+              <div className="p-3 rounded-xl bg-[#F1F5F9] border border-slate-300 shadow-sm flex flex-col justify-between">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-slate-600 mb-2">Monochrome Type</span>
+                <Logo theme="mono" variant="compact" tagline={false} />
+              </div>
+
+              {/* Type 4: App Icon */}
+              <div className="p-3 rounded-xl bg-[#0B253E] border border-white/10 shadow-sm flex flex-col items-center justify-between text-center">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-slate-300 mb-2">App / Avatar Icon</span>
+                <Logo variant="app-icon" />
+              </div>
+            </div>
+          </div>
+
+          {/* Brand Colors Bar */}
+          <div className="mt-5 pt-4 border-t border-slate-800/60 flex flex-wrap items-center gap-4 text-xs text-slate-400">
+            <span className="font-semibold text-white">Brand Palette:</span>
+            <div className="flex items-center gap-1.5">
+              <span className="w-3.5 h-3.5 rounded-full bg-[#083091] border border-white/20" />
+              <span className="font-mono text-[11px] text-slate-300">#083091 (Primary)</span>
+            </div>
+            <div className="flex items-center gap-1.5">
+              <span className="w-3.5 h-3.5 rounded-full bg-[#FF7A00]" />
+              <span className="font-mono text-[11px] text-slate-300">#FF7A00 (Accent)</span>
+            </div>
+            <div className="flex items-center gap-1.5">
+              <span className="w-3.5 h-3.5 rounded-full bg-[#1E6BD6]" />
+              <span className="font-mono text-[11px] text-slate-300">#1E6BD6 (Secondary)</span>
+            </div>
+            <div className="flex items-center gap-1.5">
+              <span className="w-3.5 h-3.5 rounded-full bg-[#333333] border border-white/20" />
+              <span className="font-mono text-[11px] text-slate-300">#333333 (Text)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Sub-footer / Copyright Row */}
       <div className="bg-[#051626] border-t border-slate-800/80 py-5 text-xs text-slate-400">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center sm:text-left">
             <span>
               &copy; 2026 <strong>Chowra Logistics and Couriers Limited</strong>. All rights reserved.

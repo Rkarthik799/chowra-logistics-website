@@ -33,7 +33,7 @@ export function NetworkSection() {
 
   return (
     <section id="network" className="py-20 bg-white scroll-mt-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <SectionHeading
           badge="Pan-India Logistics Infrastructure"
           title="Connecting Businesses and People Across Destinations"
@@ -90,7 +90,7 @@ export function NetworkSection() {
               </div>
 
               {/* Conceptual Interactive Route Map Canvas (Stylized Vector Network Map) */}
-              <div className="relative h-72 sm:h-80 w-full rounded-2xl bg-[#071E34] border border-white/10 p-4 flex items-center justify-center overflow-hidden">
+              <div className="relative h-72 sm:h-80 lg:h-96 xl:h-[420px] w-full rounded-2xl bg-[#071E34] border border-white/10 p-4 flex items-center justify-center overflow-hidden">
                 {/* Visual Grid Lines */}
                 <div
                   className="absolute inset-0 opacity-10"

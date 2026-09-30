@@ -35,15 +35,15 @@ export function WhyChooseUs() {
   };
 
   return (
-    <section id="why-us" className="py-20 bg-white scroll-mt-20 relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="about" className="py-20 bg-white scroll-mt-20 relative">
+      <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <SectionHeading
           badge="Core Operational Advantages"
           title="Why Choose Chowra Logistics?"
           subtitle="Engineered from the ground up for dependable shipment transit, state-of-the-art telemetry, and scalable enterprise supply chain adaptability."
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 xl:gap-8">
           {WHY_CHOOSE_ITEMS.map((item) => (
             <div
               key={item.id}
