@@ -4,7 +4,7 @@
 > **Evaluation Submission for:** SAC Info Tech Solutions  
 > **Candidate:** Karthik Ramanadham  
 > **Repository:** `chowra-logistics-website`  
-> **Framework:** Next.js (App Router) &bull; TypeScript &bull; Tailwind CSS &bull; Framer Motion &bull; Lucide React  
+> **Framework:** Next.js (App Router) &bull; TypeScript &bull; Tailwind CSS &bull; Lucide React
 
 ---
 
@@ -12,7 +12,7 @@
 
 This project is a responsive conceptual logistics website for **CHOWRA LOGISTICS AND COURIERS LIMITED**, created as a technical-round assignment for **SAC Info Tech Solutions**. It demonstrates frontend architecture and interactive experiences including demo shipment tracking, illustrative rate calculations, and a sample quote flow. The visual identity and company content are conceptual and created for demonstration purposes.
 
-The web application is engineered to feel like an authentic, high-traffic enterprise logistics carrier website (comparable to Blue Dart, FedEx, or DHL) rather than an academic prototype.
+The web application is engineered to provide a polished, enterprise-grade logistics experience rather than an academic prototype.
 
 ---
 
@@ -20,12 +20,12 @@ The web application is engineered to feel like an authentic, high-traffic enterp
 
 | Layer | Technology | Selection Rationale |
 |---|---|---|
-| **Framework** | **Next.js 16 (App Router)** | Modern server-ready architecture, automated asset bundling, optimized routing, and SEO indexability. |
-| **Language** | **TypeScript 5** | Strict interface definitions, typed component props, zero `any` shortcuts, and compile-time correctness. |
-| **Styling** | **Tailwind CSS v4** | Rapid utility styling, custom HSL/HEX brand color tokens, modern grid/flex layouts, and fluid responsive breakpoints. |
-| **Animations** | **Framer Motion & CSS Keyframes** | Micro-interactions, telemetry route animations, smooth elevation hovers, and accessible reduced-motion support. |
-| **Iconography** | **Lucide React** | Consistent, crisp, scalable vector iconography matching corporate logistics standards (no random emojis). |
-| **Fonts** | **Inter (Google Fonts)** | Clean geometric typography with high legibility across mobile, tablet, and high-DPI desktop displays. |
+| **Framework** | **Next.js 16 (App Router)** | Used for app routes, layouts, and static page generation. |
+| **Language** | **TypeScript 5** | Used for application components, data, and type definitions. |
+| **Styling** | **Tailwind CSS v4** | Utility classes style the interface and responsive layouts. |
+| **Animations** | **CSS Keyframes & Transitions** | Used for route graphics and interface transitions. |
+| **Iconography** | **Lucide React** | Provides the interface icons. |
+| **Fonts** | **Inter (Google Fonts)** | Used as the interface typeface. |
 
 ---
 
@@ -52,34 +52,34 @@ The logo features an aerodynamic glyph combining:
 
 ## 4. Website Architecture & Section Flow
 
-The homepage implements the sequential workflow defined in Section 10 of the specification:
+The homepage presents these sections in sequence:
 
 ```
 HEADER / STICKY NAVBAR
         ↓
-HERO SECTION (Headline, Visual Telemetry & Quick Chips)
+HERO SECTION (Headline, Conceptual Logistics Graphic & Demo AWB Chips)
         ↓
 SAMPLE METRICS (Illustrative figures for technical evaluation)
         ↓
-TRACK YOUR SHIPMENT (Functional AWB Lookups & Milestone Timeline)
+TRACK YOUR SHIPMENT (Demo AWB Lookups & Sample Milestone Timeline)
         ↓
-OUR LOGISTICS SOLUTIONS (7 Interactive Service Cards & Detail Modals)
+SAMPLE LOGISTICS SERVICES (7 Interactive Service Cards & Detail Modals)
         ↓
 SERVICE FEATURES: HOW IT WORKS (4-Step Workflow)
         ↓
-NETWORK & SERVICE COVERAGE (Interactive India Hub Map & Zonal Dossiers)
+SAMPLE NETWORK MODEL (Interactive Map & Illustrative Hub Details)
         ↓
-RATE CALCULATOR & TRANSIT ESTIMATOR (Dynamic Formula Engine)
+SAMPLE PRICING CALCULATOR (Illustrative Pricing & Transit Estimates)
         ↓
-WHY CHOOSE CHOWRA (6 Core Operational Pillars)
+SAMPLE OPERATIONAL FEATURES (6 Conceptual Feature Cards)
         ↓
-CUSTOMERS & PARTNERS (6 Industry Sectors & Sample Badges)
+SAMPLE CUSTOMER PROFILES (6 Industry Sectors & Sample Badges)
         ↓
 SAMPLE TESTIMONIALS (Fictional demonstration content)
         ↓
 FREQUENTLY ASKED QUESTIONS (Expandable Accordion)
         ↓
-CALL TO ACTION (High-Impact Lead Capture)
+CALL TO ACTION (Sample Quote Flow)
         ↓
 PROFESSIONAL MULTI-COLUMN FOOTER
 ```
@@ -89,16 +89,16 @@ PROFESSIONAL MULTI-COLUMN FOOTER
 ## 5. Functional Features & Interactive Demos
 
 ### A. Shipment Tracking Demo (`/data/trackingData.ts`)
-- Prominent search input with auto-formatting.
+- Tracking search input with inline validation.
 - **Demo AWB Numbers to test:**
-  - `CHW10001` &rarr; Status: **In Transit** (Hyderabad &rarr; Mumbai, current: Pune Zonal Sorting Hub).
+  - `CHW10001` &rarr; Sample status: **In Transit** (Hyderabad &rarr; Mumbai).
   - `CHW10002` &rarr; Sample status: **Delivered** (Bengaluru &rarr; Delhi NCR).
   - `CHW10003` &rarr; Sample status: **Out for Delivery** (Chennai &rarr; Kolkata).
 - All tracking records are fictional demo data and do not represent real shipments.
 - **Interactive Timeline:** Order Confirmed &rarr; Picked Up &rarr; In Transit &rarr; Out for Delivery &rarr; Delivered.
 - **Input Validation:** Clear inline error when entering an empty or unregistered tracking code.
 
-### B. Dynamic Tariff & Transit Calculator (`/data/rateData.ts`)
+### B. Sample Pricing & Transit Calculator (`/data/rateData.ts`)
 - Select origin city and destination city with one-click **Swap Cities** functionality.
 - Package weight input in KG with validation.
 - Select Transit Priority: *Standard Surface*, *Express Air*, or *International Priority*.
@@ -106,30 +106,29 @@ PROFESSIONAL MULTI-COLUMN FOOTER
 - Instant calculation displaying:
   - Base Freight Fare
   - Weight Surcharge
-  - Handling & Transit Insurance
-  - Applicable GST (18%)
+  - Sample handling and insurance amount
+  - GST component used by the illustrative formula
   - Total Estimated Cost & Delivery Timeline
 - **Book with Estimate** action that pre-populates the inquiry form.
 
-### C. 7 Core Logistics Solutions (`/data/services.ts`)
-1. **Domestic Courier** — Pan-India surface and express network.
+### C. 7 Sample Service Profiles (`/data/services.ts`)
+1. **Domestic Courier** — Sample domestic courier profile.
 2. **International Courier** — Illustrative cross-border customs and shipping concepts.
-3. **Express Delivery** — Time-critical same-day / next-flight dispatches.
-4. **E-commerce Logistics** — Multi-channel fulfillment, COD reconciliation, and reverse pickup.
-5. **Freight & Cargo** — Full Truckload (FTL) and Part Truckload (PTL) heavy haulage.
-6. **Pickup & Door-to-Door Delivery** — Direct premise collection and doorstep delivery.
-7. **Corporate Logistics** — Enterprise account managers, scheduled pouches, and consolidated billing.
-- Clicking any card opens a detailed modal with comprehensive service capabilities.
+3. **Express Delivery** — Conceptual priority delivery profile.
+4. **E-commerce Logistics** — Sample fulfillment, COD, and returns workflow.
+5. **Freight & Cargo** — Illustrative Full Truckload (FTL) and Part Truckload (PTL) profile.
+6. **Pickup & Door-to-Door Delivery** — Sample pickup and delivery flow.
+7. **Corporate Logistics** — Conceptual business logistics profile.
+- Selecting a card opens its detail modal.
 
-### D. Interactive Route & Hub Map (`/data/network.ts`)
-- Stylized vector network connecting Hyderabad HQ, Mumbai, Delhi, Bengaluru, Kolkata, Chennai, Ahmedabad, and Pune.
+### D. Interactive Sample Route & Hub Map (`/data/network.ts`)
+- Stylized sample network map showing Hyderabad, Mumbai, Delhi, Bengaluru, Kolkata, Chennai, Ahmedabad, and Pune.
 - Filter hubs by regional zone: *All*, *South*, *North*, *West*, *East*.
 - Dynamic hub dossier displaying illustrative sample locations, coverage, and capacity figures.
 
 ### E. Quick Quote & Inquiries Modal
-- Accessible modal dialog for quote submissions.
-- Validates contact name, email pattern, phone format, and route details.
-- Generates a confirmation reference ID (e.g. `QTE-2026-8819`).
+- Quote dialog with required-field validation.
+- Displays a sample confirmation reference ID after submission; the demo does not send inquiries to a company.
 
 ---
 
@@ -140,22 +139,22 @@ chowra-logistics-website/
 ├── app/
 │   ├── globals.css           # Tailwind v4 theme, brand CSS variables, custom animations
 │   ├── layout.tsx            # Root layout, Inter font, OpenGraph & SEO metadata
-│   └── page.tsx              # Main homepage assembling all 14 sequential sections
+│   └── page.tsx              # Main homepage assembling the page sections
 ├── components/
 │   ├── layout/
 │   │   ├── Navbar.tsx        # Sticky responsive navigation, mobile drawer & utility bar
 │   │   └── Footer.tsx        # Multi-column footer, demo disclosures & legal modal
 │   ├── sections/
 │   │   ├── Hero.tsx          # Hero headline, CTAs, quick tracking chips
-│   │   ├── TrustStats.tsx    # 4 quick trust statistics
+│   │   ├── TrustStats.tsx    # 4 sample metrics
 │   │   ├── TrackingSection.tsx # AWB tracking search & milestone timeline
-│   │   ├── ServicesSection.tsx # 7 logistics services & interactive detail modal
-│   │   ├── HowItWorks.tsx    # 4-step logistics process
-│   │   ├── NetworkSection.tsx# Interactive India network map & hub dossier
-│   │   ├── RateCalculator.tsx# Dynamic freight rate & transit estimator
-│   │   ├── WhyChooseUs.tsx   # 6 operational advantage cards
+│   │   ├── ServicesSection.tsx # 7 sample service profiles & detail modal
+│   │   ├── HowItWorks.tsx    # Sample 4-step service flow
+│   │   ├── NetworkSection.tsx# Interactive sample network map & hub dossier
+│   │   ├── RateCalculator.tsx# Illustrative pricing & transit estimator
+│   │   ├── WhyChooseUs.tsx   # 6 conceptual feature cards
 │   │   ├── PartnersSection.tsx# 6 industry sectors & conceptual client badges
-│   │   ├── Testimonials.tsx  # Customer review quotes & ratings
+│   │   ├── Testimonials.tsx  # Fictional sample testimonials & ratings
 │   │   ├── FAQSection.tsx    # Interactive accordion with search filter
 │   │   ├── CTASection.tsx    # High-impact conversion section
 │   │   └── QuoteModal.tsx    # Interactive quote request dialog with validation
@@ -166,22 +165,22 @@ chowra-logistics-website/
 │       ├── StatCard.tsx      # Metric card with icons and trend badges
 │       ├── Input.tsx         # Accessible input component with error states
 │       ├── Logo.tsx          # Conceptual vector logo and typography
-│       └── HeroLogisticsGraphic.tsx # Custom vector cargo truck & live route telemetry
+│       └── HeroLogisticsGraphic.tsx # Conceptual vector cargo truck and sample route graphic
 ├── data/
-│   ├── services.ts           # 7 logistics service definitions
-│   ├── trackingData.ts       # Mock tracking shipments (CHW10001-3)
-│   ├── network.ts            # Regional hubs, capacities & network pillars
-│   ├── rateData.ts           # Rate calculation formulas and popular cities
-│   ├── whyChooseUs.ts        # 6 operational feature pillars
+│   ├── services.ts           # 7 sample service profiles
+│   ├── trackingData.ts       # Demo tracking records (CHW10001-3)
+│   ├── network.ts            # Sample hubs, capacities, and network concepts
+│   ├── rateData.ts           # Illustrative rate formula and sample cities
+│   ├── whyChooseUs.ts        # 6 conceptual feature profiles
 │   ├── howItWorks.ts         # 4-step logistics workflow
 │   ├── partners.ts           # Industry categories & sample client badges
-│   ├── testimonials.ts       # Customer reviews and designations
+│   ├── testimonials.ts       # Fictional sample testimonials and designations
 │   └── faq.ts                # Logistics FAQs across 4 categories
 ├── lib/
 │   └── utils.ts              # Class merging (cn) and Indian Rupee formatter
 ├── public/
 │   └── logo/
-│       ├── chowra-logo.svg   # Standalone vector brand logo
+│       ├── chowra-logo.svg   # Conceptual vector brand logo
 │       └── chowra-mark.svg   # Standalone vector icon mark
 ├── types/
 │   └── index.ts              # Complete TypeScript interfaces and types
@@ -195,24 +194,23 @@ chowra-logistics-website/
 
 ## 7. Responsive Design Breakpoints
 
-The website layout includes responsive treatments for standard viewport widths:
-- **Desktop Large (1440px / 1280px):** 4-column service grids, dual-column telemetry hero layout, horizontal milestone timeline, and interactive network map.
-- **Laptop / Small Desktop (1024px):** Scaled typography, 3-column service grid, sticky header with compact navigation.
-- **Tablet (768px / 834px):** 2-column service and feature cards, stacked rate calculator, and touch-optimized hit targets.
-- **Mobile (375px / 390px / 414px):** Slide-out hamburger navigation menu, vertical milestone timeline, horizontal-scroll friendly chips, and full touch accessibility with zero horizontal page overflow.
+The layout uses responsive breakpoints for common screen sizes:
+- **Desktop:** Multi-column service grids, a two-column hero, horizontal milestone timeline, and network map.
+- **Laptop / Small Desktop:** Adjusted grid columns and compact navigation.
+- **Tablet:** Two-column cards and stacked calculator layout.
+- **Mobile:** Collapsible navigation, vertical milestone timeline, and wrapping tracking chips.
 
 ---
 
 ## 8. Getting Started Locally
 
 ### Prerequisites
-- **Node.js:** v18.18.0 or higher (v22 LTS recommended)
-- **npm:** v9 or higher
+- **Node.js and npm:** Versions supported by the installed Next.js release.
 
 ### Installation
 Clone the repository and install dependencies:
 ```bash
-git clone https://github.com/karthik-ramanadham/chowra-logistics-website.git
+git clone https://github.com/Rkarthik799/chowra-logistics-website.git
 cd chowra-logistics-website
 npm install
 ```
@@ -232,17 +230,16 @@ npm start
 
 ---
 
-## 9. Accessibility & SEO Compliance
+## 9. Accessibility & SEO
 
-- **Semantic HTML5:** Native `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, and `<footer>` elements used throughout.
+- **Semantic HTML:** Native `<header>`, `<nav>`, `<main>`, `<section>`, and `<footer>` elements are used.
 - **Heading Hierarchy:** Single primary `<h1>` in the Hero section, structured `<h2>` tags for sections, and `<h3>`/`<h4>` for cards.
-- **Keyboard Navigation:** Full tab order navigation with visible focus rings (`focus-visible:ring-2 focus-visible:ring-[#FF7A00]`).
-- **Form Usability:** Explicit label association, `aria-invalid`, `aria-describedby` error announcements, and clear inline validation.
+- **Keyboard Navigation:** Interactive elements include visible focus styles.
+- **Form Usability:** Form inputs include labels and inline validation states.
 - **SEO & Social Sharing:**
-  - Descriptive Title: `Chowra Logistics & Couriers Limited | Reliable Logistics Solutions`
-  - Meta Description: Captures core value propositions and target service lines.
+  - Descriptive title and meta description identify this as a conceptual logistics website demo.
   - OpenGraph / Twitter cards with vector brand marks.
-  - Indian locale (`en_IN`) and viewport configuration for mobile indexing.
+  - Indian locale (`en_IN`) and viewport metadata.
 
 ---
 
@@ -267,10 +264,10 @@ The project development was structured along clean, modular milestones:
 
 ---
 
-## 11. Submission Credentials
+## 11. Assignment Information
 
-- **Assignment Title:** Technical Round Assignment &ndash; Chowra Logistics
-- **Target Company:** SAC Info Tech Solutions
-- **Candidate Name:** Karthik Ramanadham
-- **Submission Email:** `hr@sacinfotech.sacb.co.in`
-- **Subject:** `Technical Round Assignment – Chowra Logistics – Karthik Ramanadham`
+- Assignment: Technical Round Assignment – Chowra Logistics
+- Organization: SAC Info Tech Solutions
+- Candidate: Karthik Ramanadham
+- Live Demo: [https://chowra-logistics-website.vercel.app/](https://chowra-logistics-website.vercel.app/)
+- GitHub: [https://github.com/Rkarthik799/chowra-logistics-website](https://github.com/Rkarthik799/chowra-logistics-website)
